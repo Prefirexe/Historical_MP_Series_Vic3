@@ -1,0 +1,17 @@
+{
+  "name" : "Royal Conference",
+  "id" : "RC",
+  "version" : "3.0",
+  "supported_game_version" : "1.8.6",
+  "picture" : "thumbnail.png",
+  "short_description" : "RC Victoria 3",
+  "tags" : [],
+  "relationships" : [],
+  "game_custom_data" : {
+    "multiplayer_synchronized" : true,
+		"replace_paths" : [
+			"common/laws",
+			"events/agitators_events/luddite_law_events.txt"
+		]
+  }
+}
