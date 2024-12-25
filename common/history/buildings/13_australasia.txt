@@ -2,6 +2,19 @@
 	s:STATE_NEW_SOUTH_WALES={
 		region_state:NSW={
 			create_building={
+				building="building_wheat_farm"
+				add_ownership={
+					building={
+						type="building_manor_house"
+						country="c:NSW"
+						levels=1
+						region="STATE_NEW_SOUTH_WALES"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_simple_farming"  "pm_tools_disabled" "pm_citrus_orchards" }
+			}
+			create_building={
 				building="building_livestock_ranch"
 				add_ownership={
 					building={
@@ -101,6 +114,19 @@
 	s:STATE_SOUTH_AUSTRALIA={
 		region_state:SAS={
 			create_building={
+				building="building_wheat_farm"
+				add_ownership={
+					building={
+						type="building_manor_house"
+						country="c:SAS"
+						levels=1
+						region="STATE_SOUTH_AUSTRALIA"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_simple_farming"  "pm_tools_disabled" "pm_citrus_orchards" }
+			}
+			create_building={
 				building="building_barracks"
 				add_ownership={
 					country={
@@ -113,6 +139,19 @@
 			}
 		}
 		region_state:KAU={
+			create_building={
+				building="building_wheat_farm"
+				add_ownership={
+					building={
+						type="building_manor_house"
+						country="c:KAU"
+						levels=1
+						region="STATE_SOUTH_AUSTRALIA"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_simple_farming" "pm_no_secondary" "pm_tools_disabled"  }
+			}
 			create_building={
 				building="building_fishing_wharf"
 				add_ownership={
