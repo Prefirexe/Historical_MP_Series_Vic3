@@ -144,7 +144,7 @@ SPC = {
 }
 
 GBR = {
-	color = { 153  0 0 }
+	color = { 160 0 0 }
 
 	country_type = recognized
 
@@ -155,7 +155,7 @@ GBR = {
 }
 
 RUS = {
-	color = { 0 86 63 }
+	color = { 3 51 0 }
 
 	country_type = recognized
 
@@ -166,7 +166,7 @@ RUS = {
 }
 
 DEN = {
-	color = { 172  70  66 }
+	color = { 198 6 0 }
 	
 	country_type = recognized
 
@@ -362,4 +362,48 @@ IDO = {
 	cultures = { vietnamese thai khmer burmese malay }
 	religion = theravada
 	capital = STATE_BANGKOK
+}
+
+NOR = {
+	color = { 0 40 100 }
+	
+	country_type = recognized
+
+	tier = kingdom
+	
+	cultures= { norwegian }
+	capital = STATE_EASTERN_NORWAY
+}
+
+TUR = {
+	color = { 96 3 0 }
+	
+	country_type = recognized
+
+	tier = empire
+	
+	cultures = { turkish }
+	capital = STATE_EASTERN_THRACE
+}
+
+PRU = {
+	color = { 26 26 33 }
+	
+	country_type = recognized
+
+	tier = kingdom
+	
+	cultures = { north_german }
+	capital = STATE_BRANDENBURG
+}
+
+FRA = {
+	color = { 16 47 150 }
+	
+	country_type = recognized
+	
+	tier = empire
+	
+	cultures = { french }
+	capital = STATE_ILE_DE_FRANCE
 }
