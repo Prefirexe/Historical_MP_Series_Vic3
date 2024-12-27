@@ -39,16 +39,16 @@
 		if = {
 			limit = {
 				is_peasant_under_serfdom = no 
-				literacy_rate > 0.2
+				literacy_rate > 0.15
 			}
-			# baseline: ( literacy - 0.2 ) * 10 * ( 2 if accepted culture and religion), norm 6 for Literacy 50% and Accepted C/R
+			# baseline: ( literacy - 0.15 ) * 15 * ( 2 if accepted culture and religion), norm 10.5 for Literacy 50% and Accepted C/R
 			add = {
 				value = literacy_rate
-				subtract = 0.4
-				multiply = 20
+				subtract = 0.15
+				multiply = 15 #was 20
 				desc = "QUALIFICATIONS_LITERACY_FACTOR"
 			}
-			
+
 			if = {
 				limit = {
 					pop_acceptance >= acceptance_status_5
@@ -63,17 +63,26 @@
 					pop_acceptance >= acceptance_status_4
 				}
 				multiply = {
-					value = 1.5
+					value = 1
 					desc = "POTENTIALS_CULTURAL_RELIGIOUS_ACCEPTANCE"
 				}
 			}
 
 			if = {
 				limit = {
+					is_pop_type = officers
+				}
+				multiply = {
+					value = 2.5
+					desc = "QUALIFICATIONS_FAVORED_TYPE"
+				}
+			}
+			if = {
+				limit = {
 					is_pop_type = clerks
 				}
 				multiply = {
-					value = 5
+					value = 10 #was 5
 					desc = "QUALIFICATIONS_FAVORED_TYPE"
 				}
 			}
@@ -88,15 +97,52 @@
 			}
 			if = {
 				limit = {
+					is_pop_type = engineers
+				}
+				multiply = {
+					value = 5 #was none
+					desc = "QUALIFICATIONS_FAVORED_TYPE"
+				}
+			}
+			if = {
+				limit = {
 					state = {
 						state_cultural_acceptance = {  
 							target = PREV.culture
-						   	value < acceptance_status_4 
-					   	}
+							value < acceptance_status_2
+						}
 					}
 				}
 				multiply = {
-					value = 0.2
+					value = 0
+					desc = "QUALIFICATIONS_CULTURAL_DISCRIMINATION"
+				}
+			}
+			else_if = {
+				limit = {
+					state = {
+						state_cultural_acceptance = {  
+							target = PREV.culture
+							value < acceptance_status_3
+						}
+					}
+				}
+				multiply = {
+					value = 0.1
+					desc = "QUALIFICATIONS_CULTURAL_DISCRIMINATION"
+				}
+			}
+			else_if = {
+				limit = {
+					state = {
+						state_cultural_acceptance = {  
+							target = PREV.culture
+							value < acceptance_status_4
+						}
+					}
+				}
+				multiply = {
+					value = 0.25
 					desc = "QUALIFICATIONS_CULTURAL_DISCRIMINATION"
 				}
 			}

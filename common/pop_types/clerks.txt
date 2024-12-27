@@ -5,20 +5,20 @@
 	wage_weight = 1.5
 	paid_private_wage = yes
 	literacy_target = 0.20
-	education_access = 0.25
+	education_access = 0.10 #was 0.25
 	dependent_wage = 0.5	# per year
 	unemployment = yes
 	
-	# 20% - 80% politically engaged	
+	# 20% - 85% politically engaged	
 	political_engagement_base = 0.20
-	political_engagement_literacy_factor = 0.6
+	political_engagement_literacy_factor = 0.65 #was 0.6
 	
 	political_engagement_mult = {
 		value = 1		
 		
 		add = {
 			desc = "POP_STARVATION"	
-
+			
 			if = {
 				limit = {
 					is_in_mild_starvation = yes
@@ -33,7 +33,6 @@
 			}
 		}
 
-		
 		multiply = {
 			desc = "HAS_POLITICAL_AGITATION"	
 			value = 1.0
@@ -47,7 +46,6 @@
 				value = 1.5
 			}		
 		}		
-		
 	}
 	
 	qualifications_growth_desc = "CLERKS_QUALIFICATIONS_DESC"
@@ -69,11 +67,76 @@
 		}
 		if = {
 			limit = {
+				has_pop_religion = jewish
+			}
+			multiply = {
+				value = 5
+				desc = "jewish"
+			}
+		}
+		if = {
+			limit = {
 				is_peasant_under_serfdom = yes
 			}
 			multiply = {
 				value = 0.1
 				desc = "QUALIFICATIONS_PEASANTS_UNDER_SERFDOM"
+			}
+		}
+		if = {
+			limit = {
+				state = {
+					state_cultural_acceptance = {  
+						target = PREV.culture
+						value < acceptance_status_2
+					}
+				}
+			}
+			multiply = {
+				value = 0.25
+				desc = "QUALIFICATIONS_CULTURAL_DISCRIMINATION"
+			}
+		}
+		else_if = {
+			limit = {
+				state = {
+					state_cultural_acceptance = {  
+						target = PREV.culture
+						value < acceptance_status_3
+					}
+				}
+			}
+			multiply = {
+				value = 0.5
+				desc = "QUALIFICATIONS_CULTURAL_DISCRIMINATION"
+			}
+		}
+		else_if = {
+			limit = {
+				state = {
+					state_cultural_acceptance = {  
+						target = PREV.culture
+						value < acceptance_status_4
+					}
+				}
+			}
+			multiply = {
+				value = 0.75
+				desc = "QUALIFICATIONS_CULTURAL_DISCRIMINATION"
+			}
+		}
+		else_if = {
+			limit = {
+				state = {
+					state_cultural_acceptance = {  
+						target = PREV.culture
+						value < acceptance_status_5
+					}
+				}
+			}
+			multiply = {
+				value = 0.9
+				desc = "QUALIFICATIONS_CULTURAL_DISCRIMINATION"
 			}
 		}
 	}

@@ -1,0 +1,12 @@
+﻿# This is executed last among all history
+GLOBAL = {
+	#add techs researched by unique countries on top of tiers
+	 #Japan
+	c:JAP = {
+		add_technology_researched = empiricism
+	}
+	 #Argentina
+	c:ARG={
+		add_technology_researched = banking 
+	}
+}

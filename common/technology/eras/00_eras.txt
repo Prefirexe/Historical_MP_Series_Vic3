@@ -1,25 +1,21 @@
 ﻿# When changing these, don't forget to update progress bonuses in events and JEs
 
 era_1 = { #Pre-1836
-	technology_cost = 6500
+	technology_cost = 8000 # for progress bonuses, use an approximate third: 2500
 }
 
 era_2 = { #1836-1861
-	technology_cost = 9000 # +2500 +39%
+	technology_cost = 11000 # for progress bonuses, use an approximate third: 3500
 }
 
 era_3 = { #1862-1886
-	technology_cost = 12500 # +3500 +38%
+	technology_cost = 14500 # for progress bonuses, use an approximate third: 4500
 }
 
 era_4 = { #1887-1911
-	technology_cost = 18000 # +5500 +44%
+	technology_cost = 18500 # for progress bonuses, use an approximate third: 5500
 }
 
 era_5 = { #1911-1936
-	technology_cost = 26000 # +8000 +44%
-}
-
-era_6 = { #1936+
-	technology_cost = 32000
+	technology_cost = 22500 # for progress bonuses, use an approximate third: 6500
 }

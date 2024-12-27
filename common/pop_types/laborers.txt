@@ -10,9 +10,9 @@
 	paid_private_wage = yes
 	dependent_wage = 0.5	# per year
 	
-	# 10% - 70% politically engaged	
-	political_engagement_base = 0.1
-	political_engagement_literacy_factor = 0.7
+	# 0% - 75% politically engaged	
+	political_engagement_base = 0.0
+	political_engagement_literacy_factor = 0.75 #was 0.5
 	
 	political_engagement_mult = {
 		value = 1.0
@@ -61,7 +61,6 @@
 				value = 1.5
 			}		
 		}		
-		
 	}
 	
 	portrait_age = {

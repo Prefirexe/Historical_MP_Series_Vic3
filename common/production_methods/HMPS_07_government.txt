@@ -135,21 +135,26 @@ pm_scholastic_education = {
 	
 	country_modifiers = {
 		workforce_scaled = { 
-			country_tech_spread_add = 1
+			country_weekly_innovation_add = 1
 		}
 	}
 	
 	building_modifiers = {
 		workforce_scaled = {
-			goods_input_paper_add = 40
+			goods_input_paper_add = 2.5
+		}	
+	
+		level_scaled = {
+			building_employment_bureaucrats_add = 100
+			building_employment_clerks_add = 500
+			building_employment_laborers_add = 500
 		}
 	}
 	
 	state_modifiers = {
 		workforce_scaled = { 
-			state_pop_qualifications_mult = 0.1
-			state_education_access_add = 0.025
-		}
+			state_pop_qualifications_mult = 0.05
+		}	
 	}
 }
 
@@ -162,20 +167,25 @@ pm_philosophy_department = {
 	
 	country_modifiers = {
 		workforce_scaled = { 
-			country_tech_spread_add = 2
+			country_weekly_innovation_add = 1.5
 		}
 	}
 	
 	building_modifiers = {
 		workforce_scaled = {
-			goods_input_paper_add = 80
+			goods_input_paper_add = 5
 		}
+		
+		level_scaled = {
+			building_employment_bureaucrats_add = 100
+			building_employment_clerks_add = 600
+			building_employment_laborers_add = 400
+		}					
 	}
 	
 	state_modifiers = {
 		workforce_scaled = { 
-			state_pop_qualifications_mult = 0.15
-			state_education_access_add = 0.05
+			state_pop_qualifications_mult = 0.075
 		}	
 	}
 }
@@ -189,20 +199,25 @@ pm_analytical_philosophy_department = {
 	
 	country_modifiers = {
 		workforce_scaled = { 
-			country_tech_spread_add = 3
+			country_weekly_innovation_add = 2
 		}
 	}
 	
 	building_modifiers = {
 		workforce_scaled = { 
-			goods_input_paper_add = 120
+			goods_input_paper_add = 7.5
 		}
+		
+		level_scaled = {
+			building_employment_bureaucrats_add = 100
+			building_employment_clerks_add = 750
+			building_employment_laborers_add = 250
+		}					
 	}
 	
 	state_modifiers = {
 		workforce_scaled = { 
-			state_pop_qualifications_mult = 0.20
-			state_education_access_add = 0.075
+			state_pop_qualifications_mult = 0.1
 		}	
 	}
 }	
@@ -216,7 +231,7 @@ pm_secular_academia = {
 	
 	building_modifiers = {
 		level_scaled = {
-			building_employment_academics_add = 10000
+			building_employment_academics_add = 400
 		}
 	}			
 }
@@ -231,8 +246,20 @@ pm_religious_academia = {
 	
 	building_modifiers = {
 		level_scaled = {
-			building_employment_clergymen_add = 5000
-			building_employment_academics_add = 5000
+			building_employment_clergymen_add = 200
+			building_employment_academics_add = 200
 		}
-	}			
+	}
+	
+	state_modifiers = {
+		workforce_scaled = { 
+			state_pop_qualifications_mult = -0.01
+		}	
+	}
+	
+	country_modifiers = {
+		workforce_scaled = { 
+			country_weekly_innovation_add = -0.25
+		}
+	}
 }

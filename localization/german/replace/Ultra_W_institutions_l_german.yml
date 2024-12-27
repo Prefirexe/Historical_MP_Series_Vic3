@@ -1,0 +1,7 @@
+﻿l_german:
+ 
+ institution_conscription:0 "Einberufung"
+ institution_conscription_desc:0 "Die verpflichtete Einberufung, gewehrleistet ensuring the defense of the Nation by its Citizens." zur Sicherstellung einer wehrhaften Armee
+
+ country_institution_conscription_max_investment_add:0 "Max. Investition der [concept_institution] „$institution_conscription$“"
+ country_institution_conscription_max_investment_add_desc:0 "Ein Bonus oder Abzug auf die maximale Investitionsstufe der [concept_institution] „$institution_conscription$“"

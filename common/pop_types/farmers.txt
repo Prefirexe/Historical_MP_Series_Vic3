@@ -77,7 +77,16 @@
 				}
 			}
 			multiply = {
-				value = 2
+				value = 5 #was 2
+				desc = "QUALIFICATIONS_FAVORED_TYPE"
+			}
+		}
+		if = {
+			limit = {
+				is_pop_type = aristocrats
+			}
+			multiply = {
+				value = 5 #was none
 				desc = "QUALIFICATIONS_FAVORED_TYPE"
 			}
 		}
@@ -88,6 +97,71 @@
 			multiply = {
 				value = 0.2
 				desc = "QUALIFICATIONS_PEASANTS_UNDER_SERFDOM"
+			}
+		}
+		if = {
+			limit = {
+				has_pop_religion = jewish
+			}
+			multiply = {
+				value = 0.2
+				desc = "jewish"
+			}
+		}
+		if = {
+			limit = {
+				state = {
+					state_cultural_acceptance = {  
+						target = PREV.culture
+						value < acceptance_status_2
+					}
+				}
+			}
+			multiply = {
+				value = 0.1
+				desc = "QUALIFICATIONS_CULTURAL_DISCRIMINATION"
+			}
+		}
+		else_if = {
+			limit = {
+				state = {
+					state_cultural_acceptance = {  
+						target = PREV.culture
+						value < acceptance_status_3
+					}
+				}
+			}
+			multiply = {
+				value = 0.25
+				desc = "QUALIFICATIONS_CULTURAL_DISCRIMINATION"
+			}
+		}
+		else_if = {
+			limit = {
+				state = {
+					state_cultural_acceptance = {  
+						target = PREV.culture
+						value < acceptance_status_4
+					}
+				}
+			}
+			multiply = {
+				value = 0.5
+				desc = "QUALIFICATIONS_CULTURAL_DISCRIMINATION"
+			}
+		}
+		else_if = {
+			limit = {
+				state = {
+					state_cultural_acceptance = {  
+						target = PREV.culture
+						value < acceptance_status_5
+					}
+				}
+			}
+			multiply = {
+				value = 0.75
+				desc = "QUALIFICATIONS_CULTURAL_DISCRIMINATION"
 			}
 		}
 	}

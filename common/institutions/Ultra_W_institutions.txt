@@ -1,0 +1,4 @@
+﻿institution_conscription = { # Max level from tech
+	icon = "gfx/interface/icons/institution_icons/unused/conscription.dds"
+	background_texture = "gfx/interface/illustrations/institutions/conscription.dds"
+}

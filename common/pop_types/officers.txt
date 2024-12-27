@@ -48,13 +48,15 @@
 					}
 					is_pop_type = soldiers
 				}
+				wealth > 10 #was none
+				literacy_rate > 0.05 #was none
 			}
 			# baseline: ( literacy - 0.2 ) * 10, norm 2 for Soldiers with Literacy 30%
 			add = {
 				value = literacy_rate
-				subtract = 0.2
-				min = 0.05
-				multiply = 10
+				subtract = 0.1 # was 0.2
+				min = 0
+				multiply = 5 #was 10
 				desc = "QUALIFICATIONS_LITERACY_FACTOR"
 			}
 			if = {
@@ -62,7 +64,7 @@
 					is_pop_type = aristocrats
 				}
 				multiply = {
-					value = 5
+					value = 10 #was 5
 					desc = "QUALIFICATIONS_FAVORED_TYPE"
 				}
 			}
@@ -90,22 +92,17 @@
 					NOT = { is_pop_type = aristocrats }
 				}
 				multiply = {
-					value = 0.5
+					value = 0.1
 					desc = "QUALIFICATIONS_OFFICERS_PEASANT_LEVIES"
 				}
 			}
-			if = { #HMPS change
+			if = {
 				limit = {
-					state = {
-						state_cultural_acceptance = {
-							target = PREV.culture
-						   	value < acceptance_status_5
-					   	}
-					}
+					has_pop_religion = jewish
 				}
 				multiply = {
-					value = 0.5
-					desc = "QUALIFICATIONS_CULTURAL_DISCRIMINATION"
+					value = 0.1
+					desc = "jewish"
 				}
 			}
 		}

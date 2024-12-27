@@ -5,7 +5,7 @@
 	wage_weight = 3
 	paid_private_wage = yes
 	literacy_target = 0.80
-	education_access = 0.4
+	education_access = 0.25
 	dependent_wage = 0.5	# per year
 	unemployment = yes
 	
@@ -38,13 +38,13 @@
 	qualifications = {
 		if = {
 			limit = {
-				literacy_rate > 0.15
+				literacy_rate > 0.025 #was 0.2
 			}
-			# baseline: ( literacy - 0.15 ) * 20, norm 6 for Literacy 50% and Accepted Religion
+			# baseline: ( literacy - 0.2 ) * 20, norm 6 for Literacy 50% and Accepted Religion
 			add = {
 				value = literacy_rate
-				subtract = 0.15
-				multiply = 20
+				subtract = 0.02 #was 0.2
+				multiply = 10 #was 20
 				desc = "QUALIFICATIONS_LITERACY_FACTOR"
 			}
 			if = {
@@ -52,7 +52,7 @@
 					is_pop_type = academics
 				}
 				multiply = {
-					value = 5
+					value = 10 #was 5
 					desc = "QUALIFICATIONS_FAVORED_TYPE"
 				}
 			}

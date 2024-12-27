@@ -1,0 +1,61 @@
+﻿l_french:
+
+combat_unit_type_mechanized_infantry:0 "Infanterie Motorisée"
+
+aerial_support:0 "Soutien Aerien"
+aerial_support_desc:0 "Le soutien depuis les cieux, que ce soit pour la reconnaissance ou le soutien direct, est essentiel dans une bataille."
+
+mobilization_option_balloons:0 "Mongolfières"
+mobilization_option_balloons_desc:0 "Ballons à hydrogène utilisés comme plateformes d'observation."
+mobilization_option_zeppelins:0 "Zeppelins"
+mobilization_option_zeppelins_desc:0 "Les ballons dirigeables sont bien plus mobiles que les mongolfières, ce qui permet une reconnaissance plus efficace."
+mobilization_option_air_support:0 "Soutien Direct au Sol"
+mobilization_option_air_support_desc:0 "Les progrès en aviation permettent maintenant de soutenir directement les troupes au sol via des bombardements tactiques, donnant ainsi un avantage considérable."
+
+## Repeaters tech name changed to represent breech-loading rifles instead
+
+pm_repeaters:0 "Fusils à chargement par la culasse"
+repeaters:0 "Fusils à chargement par la culasse"
+repeaters_desc:0 "En changeant le design pour un chargement par la culasse plutôt que par la bouche, il est possible d'aboutir à des armes bien plus efficaces."
+
+# Renamed ships
+
+combat_unit_type_battleship:0 "Super-Dreadnoughts"
+battleship_tech:0 "Super-Dreadnoughts"
+
+### Obsolete stuff
+
+pmg_small_arms:0 "Small Arms"
+
+pm_small_arms_personal_weapons:0 "Personal Weapons"
+pm_small_arms_muskets:0 "Muskets"
+pm_small_arms_rifles:0 "Rifled Muskets"
+pm_small_arms_repeating_rifles:0 "Breech Loading Rifles"
+pm_small_arms_bolt_action_rifles:0 "Bolt Action Rifles"
+
+pmg_support_weapons:0 "Support Weapons"
+
+pm_no_support_weapons:0 "No Support Weapons"
+pm_grenades:0 "Grenades"
+
+pmg_uniforms:0       "Uniforms"
+pmg_uniforms_consc:0 "$pmg_uniforms$"
+pmg_uniforms_navy:0  "$pmg_uniforms$"
+
+# Uniforms PMs
+pm_no_uniforms:0          "No Uniforms"
+pm_no_uniforms_navy:0     "$pm_no_uniforms$"
+pm_traditional_uniforms:0 "Traditional Garb"
+pm_full_dress:0           "Full Dress"
+pm_full_dress_consc:0     "$pm_full_dress$"
+pm_full_dress_navy:0      "$pm_full_dress$"
+pm_modern_uniform:0       "Helmets & Drab"
+pm_modern_uniform_consc:0 "$pm_modern_uniform$"
+pm_modern_uniform_navy:0  "Caps & Coats"
+
+
+
+
+
+
+

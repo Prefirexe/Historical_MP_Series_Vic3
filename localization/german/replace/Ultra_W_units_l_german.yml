@@ -1,0 +1,61 @@
+﻿l_german:
+
+combat_unit_type_mechanized_infantry:0 "Motorisierte Infanterie"
+
+aerial_support:0 "Luftunterstützung"
+aerial_support_desc:0 "Ob zur Aufklärung oder direkter Luftunterstützung, ihre Präsenz über dem Schlachtfeld ist unbezahlbar."
+
+mobilization_option_balloons:0 "Wasserstoffballon"
+mobilization_option_balloons_desc:0 "Wasserstoffballon dienen als Aufklärungsplattformen."
+mobilization_option_zeppelins:0 "Zeppeline"
+mobilization_option_zeppelins_desc:0 "Zeppeline sind mobiler als Heißluftballons und erlauben effizientere Aufklärung."
+mobilization_option_air_support:0 "Luftnahunterstützung"
+mobilization_option_air_support_desc:0 "Fortschritte in der Luftfahrt erlauben eine direkte Unterstützung der Bodentruppen, was einen riesigen Vorteil auf dem Schlachtfeld bietet."
+
+## Repeaters tech name changed to represent breech-loading rifles instead
+
+pm_repeaters:0 "Hinterladergewehre"
+repeaters:0 "Hinterladergewehre"
+repeaters_desc:0 "Es ist möglich eine viel effizientere Waffe herzustellen, in dem man eine Patrone durch eine hintere Öffnung in die Kammer schiebt, statt dem Lauf."
+
+# Renamed ships
+
+combat_unit_type_battleship:0 "Großlinienschiffe"
+battleship_tech:0 "Großlinienschiffe"
+
+### Obsolete stuff
+
+pmg_small_arms:0 "Handfeuerwaffe"
+
+pm_small_arms_personal_weapons:0 "Seitenwaffe"
+pm_small_arms_muskets:0 "Muskete"
+pm_small_arms_rifles:0 "Gezogene Musketen"
+pm_small_arms_repeating_rifles:0 "Hinterladergewehre"
+pm_small_arms_bolt_action_rifles:0 "Mehrladergewehr"
+
+pmg_support_weapons:0 "Unterstützungswaffen"
+
+pm_no_support_weapons:0 "Keine Unterstützungswaffen"
+pm_grenades:0 "Granaten"
+
+pmg_uniforms:0       "Uniformen"
+pmg_uniforms_consc:0 "$pmg_uniforms$"
+pmg_uniforms_navy:0  "$pmg_uniforms$"
+
+# Uniforms PMs
+pm_no_uniforms:0          "Keine Uniformen"
+pm_no_uniforms_navy:0     "$pm_no_uniforms$"
+pm_traditional_uniforms:0 "Traditionelle Uniformen"
+pm_full_dress:0           "Komplette Uniform"
+pm_full_dress_consc:0     "$pm_full_dress$"
+pm_full_dress_navy:0      "$pm_full_dress$"
+pm_modern_uniform:0       "Stahlelme & Feldblusen"
+pm_modern_uniform_consc:0 "$pm_modern_uniform$"
+pm_modern_uniform_navy:0  "Mützen und Mäntel"
+
+
+
+
+
+
+

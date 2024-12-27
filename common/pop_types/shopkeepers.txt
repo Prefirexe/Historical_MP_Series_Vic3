@@ -2,7 +2,7 @@
 	texture = "gfx/interface/icons/pops_icons/shopkeepers.dds"
 	color = hsv{ 0.41 0.45 0.88 }
 	start_quality_of_life = 10
-	wage_weight = 3
+	wage_weight = 2
 	paid_private_wage = yes
 	literacy_target = 0.20
 	dependent_wage = 0.5	# per year
@@ -53,6 +53,15 @@
 		}
 		if = {
 			limit = {
+				is_pop_type = capitalists
+			}
+			multiply = {
+				value = 5
+				desc = "QUALIFICATIONS_FAVORED_TYPE"
+			}
+		}
+		if = {
+			limit = {
 				is_pop_type = farmers
 			}
 			multiply = {
@@ -66,7 +75,58 @@
 			}
 			multiply = {
 				desc = "QUALIFICATIONS_PEASANTS_UNDER_SERFDOM"
-				value = 0
+				value = 0.01
+			}
+		}
+		if = {
+			limit = {
+				has_pop_religion = jewish
+			}
+			multiply = {
+				value = 10
+				desc = "jewish"
+			}
+		}
+		if = {
+			limit = {
+				state = {
+					state_cultural_acceptance = {  
+						target = PREV.culture
+						value < acceptance_status_2
+					}
+				}
+			}
+			multiply = {
+				value = 0.1
+				desc = "QUALIFICATIONS_CULTURAL_DISCRIMINATION"
+			}
+		}
+		else_if = {
+			limit = {
+				state = {
+					state_cultural_acceptance = {  
+						target = PREV.culture
+						value < acceptance_status_3
+					}
+				}
+			}
+			multiply = {
+				value = 0.25
+				desc = "QUALIFICATIONS_CULTURAL_DISCRIMINATION"
+			}
+		}
+		else_if = {
+			limit = {
+				state = {
+					state_cultural_acceptance = {  
+						target = PREV.culture
+						value < acceptance_status_4
+					}
+				}
+			}
+			multiply = {
+				value = 0.75
+				desc = "QUALIFICATIONS_CULTURAL_DISCRIMINATION"
 			}
 		}
 	}

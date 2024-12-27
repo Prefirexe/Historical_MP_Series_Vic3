@@ -1,0 +1,7 @@
+﻿l_french:
+ 
+ institution_conscription:0 "Service Militaire"
+ institution_conscription_desc:0 "Le Service Militaire est obligatoire, la défense de la Nation étant assurée par son peuple."
+
+ country_institution_conscription_max_investment_add:0 "Investissement maximum de l’[concept_institution|l] $institution_conscription$"
+ country_institution_conscription_max_investment_add_desc:0 "Un bonus ou une pénalité au niveau d’investissement de l’[concept_institution|l] $institution_conscription$."

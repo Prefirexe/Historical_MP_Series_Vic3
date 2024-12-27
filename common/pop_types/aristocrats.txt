@@ -3,10 +3,9 @@
 	color = hsv{ 0.60 0.58 0.46 }
 	start_quality_of_life = 20
 	working_adult_ratio = 0.2
-	wage_weight = 5
+	wage_weight = 6
 	paid_private_wage = no
 	literacy_target = 0.60
-	education_access = 0.25
 	dependent_wage = 0.0	# per year
 	unemployment = yes
 	
@@ -58,6 +57,7 @@
 				}
 				desc = "QUALIFICATIONS_LITERACY_FACTOR"
 			}
+
 			if = {
 				limit = {
 					is_pop_type = bureaucrats
@@ -88,17 +88,78 @@
 					desc = "QUALIFICATIONS_FAVORED_TYPE"
 				}
 			}
+
+			if = {
+				limit = {
+					is_pop_type = capitalists
+				}
+				multiply = {
+					value = 5 #was none
+					desc = "QUALIFICATIONS_FAVORED_TYPE"
+				}
+			}
+			if = {
+				limit = {
+					has_pop_religion = jewish
+				}
+				multiply = {
+					value = 0.1
+					desc = "jewish"
+				}
+			}
 			if = {
 				limit = {
 					state = {
 						state_cultural_acceptance = {  
 							target = PREV.culture
-						   	value < acceptance_status_4 
-					   	}
+							value < acceptance_status_2
+						}
 					}
 				}
 				multiply = {
-					value = 0.3
+					value = 0
+					desc = "QUALIFICATIONS_CULTURAL_DISCRIMINATION"
+				}
+			}
+			else_if = {
+				limit = {
+					state = {
+						state_cultural_acceptance = {  
+							target = PREV.culture
+							value < acceptance_status_3
+						}
+					}
+				}
+				multiply = {
+					value = 0.1
+					desc = "QUALIFICATIONS_CULTURAL_DISCRIMINATION"
+				}
+			}
+			else_if = {
+				limit = {
+					state = {
+						state_cultural_acceptance = {  
+							target = PREV.culture
+							value < acceptance_status_4
+						}
+					}
+				}
+				multiply = {
+					value = 0.25
+					desc = "QUALIFICATIONS_CULTURAL_DISCRIMINATION"
+				}
+			}
+			else_if = {
+				limit = {
+					state = {
+						state_cultural_acceptance = {  
+							target = PREV.culture
+							value < acceptance_status_5
+						}
+					}
+				}
+				multiply = {
+					value = 0.5
 					desc = "QUALIFICATIONS_CULTURAL_DISCRIMINATION"
 				}
 			}

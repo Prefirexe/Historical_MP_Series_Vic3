@@ -41,13 +41,13 @@
 		if = {
 			limit = {
 				is_peasant_under_serfdom = no
-				literacy_rate > 0.35
+				literacy_rate > 0.25 #Was 0.2
 			}
-			# baseline: ( literacy - 0.35 ) * 10 + ( wealth / 10 ), norm 5
+			# baseline: ( literacy - 0.2 ) * 10 + ( wealth / 10 ), norm 5
 			add = {
 				value = literacy_rate
-				subtract = 0.35
-				multiply = 20
+				subtract = 0.2
+				multiply = 40 #Was 20
 				desc = "QUALIFICATIONS_LITERACY_FACTOR"
 			}
 			add = {
@@ -60,7 +60,7 @@
 					is_pop_type = clerks
 				}
 				multiply = {
-					value = 5
+					value = 2.5 #Was 5
 					desc = "QUALIFICATIONS_FAVORED_TYPE"
 				}
 			}
@@ -75,26 +75,86 @@
 			}
 			if = {
 				limit = {
+					is_pop_type = bureaucrats
+				}
+				multiply = {
+					value = 7.5 #was none
+					desc = "QUALIFICATIONS_FAVORED_TYPE"
+				}
+			}
+			if = {
+				limit = {
+					is_pop_type = capitalists
+				}
+				multiply = {
+					value = 10 #Was none
+					desc = "QUALIFICATIONS_FAVORED_TYPE"
+				}
+			}
+			if = {
+				limit = {
+					is_pop_type = engineers
+				}
+				multiply = {
+					value = 10 #Was none
+					desc = "QUALIFICATIONS_FAVORED_TYPE"
+				}
+			}
+			if = {
+				limit = {
 					state = {
-						state_cultural_acceptance = {
+						state_cultural_acceptance = {  
 							target = PREV.culture
-						   	value < acceptance_status_4
-					   	}
+							value < acceptance_status_2
+						}
 					}
 				}
 				multiply = {
-					value = 0.2
+					value = 0
 					desc = "QUALIFICATIONS_CULTURAL_DISCRIMINATION"
 				}
-			if = {
+			}
+			else_if = {
 				limit = {
-					has_state_religion = no
+					state = {
+						state_cultural_acceptance = {  
+							target = PREV.culture
+							value < acceptance_status_3
+						}
+					}
 				}
 				multiply = {
-					value = 0.6
-					desc = "QUALIFICATIONS_RELIGIOUS_DISCRIMINATION"
+					value = 0.1
+					desc = "QUALIFICATIONS_CULTURAL_DISCRIMINATION"
 				}
 			}
+			else_if = {
+				limit = {
+					state = {
+						state_cultural_acceptance = {  
+							target = PREV.culture
+							value < acceptance_status_4
+						}
+					}
+				}
+				multiply = {
+					value = 0.25
+					desc = "QUALIFICATIONS_CULTURAL_DISCRIMINATION"
+				}
+			}
+			else_if = {
+				limit = {
+					state = {
+						state_cultural_acceptance = {  
+							target = PREV.culture
+							value < acceptance_status_5
+						}
+					}
+				}
+				multiply = {
+					value = 0.5
+					desc = "QUALIFICATIONS_CULTURAL_DISCRIMINATION"
+				}
 			}
 		}
 		else_if = {

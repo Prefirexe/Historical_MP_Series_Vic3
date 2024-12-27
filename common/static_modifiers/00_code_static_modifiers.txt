@@ -7,16 +7,16 @@
 base_values = {
 	regime_change_allowed = 0
 	
-	country_weekly_innovation_add = 50
-	country_weekly_innovation_max_add = 50
-	country_tech_spread_add = 25
+	country_weekly_innovation_add = 10 #was 50
+	country_weekly_innovation_max_add = 25 #was 50
+	country_tech_spread_add = 25 #was 25
 	
 	country_loan_interest_rate_add = 0.2
 	
 	country_legitimacy_govt_size_add = 1
 	
 	country_bureaucracy_add = 100
-	country_authority_add = 250
+	country_authority_add = 100
 	country_influence_add = 100
 
 	country_secession_progress_add = 0.1
@@ -33,13 +33,19 @@ base_values = {
 	state_lower_strata_expected_sol_add = 5
 	state_middle_strata_expected_sol_add = 10
 	state_upper_strata_expected_sol_add = 15
-	state_expected_sol_from_literacy = 5
+	state_expected_sol_from_literacy = 0 #was 5
 	
-	state_farmers_investment_pool_contribution_add = 0.1
-	state_shopkeepers_investment_pool_contribution_add = 0.2
-	state_clergymen_investment_pool_contribution_add = 0.20
-	state_aristocrats_investment_pool_contribution_add = 0.20
-	state_capitalists_investment_pool_contribution_add = 0.30
+	state_farmers_investment_pool_contribution_add = 0.0625 # added 25% contribution to partially ofset huge base efficiency malus
+	state_shopkeepers_investment_pool_contribution_add = 0.0625 # added 25% contribution to partially ofset huge base efficiency malus
+	state_clergymen_investment_pool_contribution_add = 0.25 # added 25% contribution to partially ofset huge base efficiency malus
+	state_aristocrats_investment_pool_contribution_add = 0.25 # added 25% contribution to partially ofset huge base efficiency malus
+	state_capitalists_investment_pool_contribution_add = 0.375 # added 25% contribution to partially ofset huge base efficiency malus
+
+	state_farmers_investment_pool_efficiency_mult = -0.40 # 15% from techs, 25% at most from laws => 40% (90% malus efficiency under vanilla's traditionalism without techs)
+	state_shopkeepers_investment_pool_efficiency_mult = -0.40 # 15% from techs, 25% at most from laws => 40% (90% malus at worst under Vanilla's traditionalism without techs)
+	state_capitalists_investment_pool_efficiency_mult = -0.50 # 25% from techs, 25% at most from laws => 50% (100% malus under Vanilla's traditionalism without techs)
+	state_aristocrats_investment_pool_efficiency_mult = -0.40 # 15% from techs, 25% at most from laws => 65% (90% malus efficiency under vanilla's traditionalism without techs)
+	state_clergymen_investment_pool_efficiency_mult = -0.40 # 15% from techs, 25% at most from laws => 65% (90% malus efficiency under vanilla's traditionalism without techs)
 	
 	# To balance for unincorporated states not paying taxes
 	state_unincorporated_starting_wages_mult = -0.20
@@ -51,12 +57,12 @@ base_values = {
 	
 	building_economy_of_scale_level_cap_add = 20
 	
-	state_market_access_price_impact = 0.7
+	state_market_access_price_impact = 0.75
 	
 	country_company_throughput_bonus_add = 0.25
 	country_company_construction_efficiency_bonus_add = 0.5
 	
-	country_max_weekly_construction_progress_add = 20
+	country_max_weekly_construction_progress_add = 10
 	
 	country_free_trade_routes_add = 5
 	
