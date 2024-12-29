@@ -251,7 +251,7 @@ law_laissez_faire = {
 	}
 	
 	unlocking_technologies = {
-		banking
+		mutual_funds
 	}
 	
 	on_activate = {
@@ -276,8 +276,10 @@ law_laissez_faire = {
 	}
 	
 	modifier = {
+		country_authority_mult = -0.1
+
 		country_loan_interest_rate_mult = -0.1
-		state_shopkeepers_investment_pool_efficiency_mult = 0.25
+		state_shopkeepers_investment_pool_efficiency_mult = 0.15
 		state_capitalists_investment_pool_efficiency_mult = 0.25
 		country_private_construction_allocation_mult = 0.75
 		
