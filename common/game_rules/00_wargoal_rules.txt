@@ -1,5 +1,5 @@
 ﻿ai_wargoals_allowed_or_nah = {
-	default = ai_wargoals_allowed
+	default = ai_wargoals_blocked
 
 	ai_wargoals_allowed = {
 	}

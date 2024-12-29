@@ -54,7 +54,7 @@ demand_conquest = {
 		ROOT = {
 			set_variable = {
 				name = war_goal_add_cooldown
-				months = 12
+				months = 1
 			}
 		}
 		if = {
@@ -197,7 +197,7 @@ demand_return_claim = {
 		ROOT = {
 			set_variable = {
 				name = war_goal_add_cooldown
-				months = 12
+				months = 1
 			}
 		}
 		if = {
@@ -343,7 +343,7 @@ demand_treaty_port = {
 		ROOT = {
 			set_variable = {
 				name = war_goal_add_cooldown
-				months = 12
+				months = 1
 			}
 		}
 		if = {
@@ -487,7 +487,7 @@ demand_war_reps = {
 		ROOT = {
 			set_variable = {
 				name = war_goal_add_cooldown
-				months = 12
+				months = 1
 			}
 		}
 		random_diplomatic_play = { 
@@ -598,7 +598,7 @@ demand_ban_slavery = {
 		ROOT = {
 			set_variable = {
 				name = war_goal_add_cooldown
-				months = 12
+				months = 1
 			}
 		}
 		random_diplomatic_play = { 
@@ -720,7 +720,7 @@ demand_iraqi_freedom = {
 		ROOT = {
 			set_variable = {
 				name = war_goal_add_cooldown
-				months = 12
+				months = 1
 			}
 		}
 		random_diplomatic_play = { 
@@ -844,7 +844,7 @@ demand_containment = {
 		ROOT = {
 			set_variable = {
 				name = war_goal_add_cooldown
-				months = 12
+				months = 1
 			}
 		}
 		random_diplomatic_play = { 
@@ -958,7 +958,7 @@ demand_standard_oil = {
 		ROOT = {
 			set_variable = {
 				name = war_goal_add_cooldown
-				months = 12
+				months = 1
 			}
 		}
 		random_diplomatic_play = { 
@@ -1072,7 +1072,7 @@ demand_humiliation = {
 	ROOT = {
 			set_variable = {
 				name = war_goal_add_cooldown
-				months = 12
+				months = 1
 			}
 		}
 	random_diplomatic_play = { 
@@ -1189,7 +1189,7 @@ demand_dominion = {
 		ROOT = {
 			set_variable = {
 				name = war_goal_add_cooldown
-				months = 12
+				months = 1
 			}
 		}
 		random_diplomatic_play = { 
@@ -1304,7 +1304,7 @@ demand_protectorate2 = {
 		ROOT = {
 			set_variable = {
 				name = war_goal_add_cooldown
-				months = 12
+				months = 1
 			}
 		}
 		random_diplomatic_play = { 
@@ -1421,7 +1421,7 @@ demand_transfer_subject = {
 	ROOT = {
 			set_variable = {
 				name = war_goal_add_cooldown
-				months = 12
+				months = 1
 			}
 		}
 	random_diplomatic_play = { 
@@ -1538,7 +1538,7 @@ demand_liberate_subject = {
 		ROOT = {
 			set_variable = {
 				name = war_goal_add_cooldown
-				months = 12
+				months = 1
 			}
 		}
 		random_diplomatic_play = { 

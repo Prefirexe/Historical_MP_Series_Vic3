@@ -120,7 +120,7 @@
  
  WAR_NOT_WELL_ENOUGH:0 "We are not losing the war"
  
- WARGOAL_ON_COOLDOWN:0 "You must wait 12 months before adding another wargoal."
+ WARGOAL_ON_COOLDOWN:0 "You must wait 1 months before adding another wargoal."
  war_goal_add_cooldown:0 "Wargoal cooldown"
  
  # game rules
