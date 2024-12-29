@@ -7,9 +7,9 @@
 		}
 
 		level_scaled = {
-			building_employment_laborers_add = 3500
-			building_employment_clerks_add = 900
-			building_employment_shopkeepers_add = 400
+			building_employment_laborers_add = 2625
+			building_employment_clerks_add = 675
+			building_employment_shopkeepers_add = 300
 		}
 	}
 
@@ -33,9 +33,9 @@ pm_market_squares = {
 		}
 
 		level_scaled = {
-			building_employment_laborers_add = 3000
-			building_employment_clerks_add = 1400
-			building_employment_shopkeepers_add = 400
+			building_employment_laborers_add = 2250
+			building_employment_clerks_add = 1050
+			building_employment_shopkeepers_add = 300
 		}
 	}
 
@@ -60,9 +60,9 @@ pm_covered_markets = {
 		}
 
 		level_scaled = {
-			building_employment_laborers_add = 2500
-			building_employment_clerks_add = 1900
-			building_employment_shopkeepers_add = 400
+			building_employment_laborers_add = 1875
+			building_employment_clerks_add = 1425
+			building_employment_shopkeepers_add = 300
 		}
 	}
 
@@ -88,9 +88,9 @@ pm_arcades = {
 		}
 
 		level_scaled = {
-			building_employment_laborers_add = 1000
-			building_employment_clerks_add = 3000
-			building_employment_shopkeepers_add = 1000
+			building_employment_laborers_add = 750
+			building_employment_clerks_add = 2250
+			building_employment_shopkeepers_add = 750
 		}
 	}
 
@@ -136,13 +136,57 @@ pm_gas_streetlights = {
 		}
 
 		level_scaled = {
-			building_employment_laborers_add = 250
+			building_employment_laborers_add = 185
 		}
 	}
 
 	state_modifiers = {
 		workforce_scaled = {
 			state_infrastructure_add = 1
+		}
+	}
+}
+
+pm_state_urban_clergy = {
+	texture = "gfx/interface/icons/production_method_icons/ownership_clergy.dds"
+
+	unlocking_laws = {
+		law_state_religion
+	}
+
+	building_modifiers = {
+		level_scaled = {
+			building_employment_clergymen_add = 200
+		}
+	}
+}
+
+pm_free_urban_clergy = {
+	texture = "gfx/interface/icons/production_method_icons/ownership_bureacrats.dds"
+
+	disallowing_laws = {
+		law_state_religion
+		law_state_atheism
+	}
+
+	building_modifiers = {
+		level_scaled = {
+			building_employment_clerks_add = 100
+			building_employment_clergymen_add = 100
+		}
+	}
+}
+
+pm_no_urban_clergy = {
+	texture = "gfx/interface/icons/production_method_icons/state_atheism.dds"
+	unlocking_laws = {
+		law_state_atheism
+	}
+
+	building_modifiers = {
+		level_scaled = {
+			building_employment_clerks_add = 150
+			building_employment_bureaucrats_add = 50
 		}
 	}
 }
