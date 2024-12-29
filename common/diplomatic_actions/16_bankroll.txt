@@ -20,7 +20,14 @@
 		}
 	}
 	
-	possible = {}
+	possible = {		
+		scope:target_country = {
+            OR = {
+                is_at_war = no
+                is_diplomatic_play_ally_of = root
+            }
+		}
+	}
 	
 	pact = {	
 		cost = 100
@@ -35,7 +42,6 @@
 		
 		income_transfer = 0.20
 		second_country_gets_income_transfer = yes
-		max_paying_country_income_to_transfer = 0.10
 		income_transfer_based_on_second_country = yes
 		
 		second_modifier = {
