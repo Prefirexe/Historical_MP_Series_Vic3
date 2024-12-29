@@ -2694,7 +2694,8 @@ STATES = {
 		}
 		
 		add_homeland = cu:maghrebi
-		add_homeland = cu:berber		
+		add_homeland = cu:berber
+		add_claim = c:FRA						
 	}
 	s:STATE_SAHARA = {
 		create_state = {
@@ -2733,6 +2734,8 @@ STATES = {
 		
 		add_homeland = cu:maghrebi
 		add_homeland = cu:berber
+		add_claim = c:FRA				
+
 	}
 	s:STATE_CONSTANTINE = {
 		create_state = {
@@ -2751,7 +2754,9 @@ STATES = {
 		}
 		
 		add_homeland = cu:maghrebi
-		add_homeland = cu:berber		
+		add_homeland = cu:berber
+		add_claim = c:FRA				
+		
 	}
 	s:STATE_TRIPOLI = {
 		create_state = {
