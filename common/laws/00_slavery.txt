@@ -102,7 +102,11 @@ law_legacy_slavery = {
 	}	
 	
 	modifier = {
-		interest_group_ig_landowners_pol_str_mult = 0.3
+		interest_group_ig_landowners_pol_str_mult = 0.25
+		building_group_bg_agriculture_throughput_add = 0.05
+		building_group_bg_ranching_throughput_add = 0.05
+		building_group_bg_plantations_throughput_add = 0.05
+		country_infamy_decay_mult = -0.25
 	}
 	
 	ai_enact_weight_modifier = { #Petitions
@@ -159,6 +163,10 @@ law_debt_slavery = {
 	
 	modifier = {
 		interest_group_ig_landowners_pol_str_mult = 0.5
+		building_group_bg_agriculture_throughput_add = 0.1
+		building_group_bg_ranching_throughput_add = 0.1
+		building_group_bg_plantations_throughput_add = 0.1
+		country_infamy_decay_mult = -0.5
 	}
 	
 	# AI should never enact debt slavery
@@ -235,7 +243,11 @@ law_slave_trade = {
 	}
 	
 	modifier = {
-		interest_group_ig_landowners_pol_str_mult = 0.6
+		interest_group_ig_landowners_pol_str_mult = 0.5
+		building_group_bg_agriculture_throughput_add = 0.1
+		building_group_bg_ranching_throughput_add = 0.1
+		building_group_bg_plantations_throughput_add = 0.1
+		country_infamy_decay_mult = -0.5
 	}
 	
 	ai_will_do = {
