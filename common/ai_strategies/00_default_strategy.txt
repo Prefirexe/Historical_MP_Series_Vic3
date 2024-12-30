@@ -1,16 +1,4 @@
-﻿##################################################################################################
-### URBAN SYNERGY NOTES
-###
-### This only:
-### a) turns off AI subsidies for Rail, Trade, and Power Plants, and
-### b) increases the maximum desired AI construction amount to 10,000.
-###
-### Both of these are unnecessary - so it's ok if this gets overwritten by other AI mods.
-### HOWEVER - I recommend other AI mods make these changes as well.
-###
-##################################################################################################
-
-# This is a special strategy that sets the default values for different AI scores
+﻿# This is a special strategy that sets the default values for different AI scores COPIED OVER TO HMPS BECAUSE IT REFERENCES SYRIAN STATES
 # All AIs always load data from this strategy, which can then be either added to or overridden by data from its other strategies
 
 ai_strategy_default = {
@@ -698,10 +686,7 @@ ai_strategy_default = {
 				has_journal_entry = je_sick_man_syria
 				scope:enemy_country = {
 					OR = {
-						owns_entire_state_region = STATE_ALEPPO
-						owns_entire_state_region = STATE_SYRIA
-						owns_entire_state_region = STATE_LEBANON
-						owns_entire_state_region = STATE_PALESTINE
+						owns_entire_state_region = STATE_GREATER_SYRIA
 						owns_entire_state_region = STATE_TRANSJORDAN
 						owns_entire_state_region = STATE_ADANA
 					}
@@ -2267,10 +2252,7 @@ ai_strategy_default = {
 						has_journal_entry = je_sick_man_syria
 						scope:target_country = {
 							OR = {
-								owns_entire_state_region = STATE_ALEPPO
-								owns_entire_state_region = STATE_SYRIA
-								owns_entire_state_region = STATE_LEBANON
-								owns_entire_state_region = STATE_PALESTINE
+								owns_entire_state_region = STATE_GREATER_SYRIA
 								owns_entire_state_region = STATE_TRANSJORDAN
 								owns_entire_state_region = STATE_ADANA
 							}
@@ -2528,7 +2510,7 @@ ai_strategy_default = {
 				}
 			}
 			add = 100
-		}
+		}		
 		
 		# Opium wars aggressor should be very, very aggressive against target if they're banning opium
 		if = {
@@ -2890,7 +2872,7 @@ ai_strategy_default = {
 				}
 			}
 			add = 25
-
+			
 			if = {
 				limit = {
 					has_journal_entry = je_scramble_for_africa
@@ -3329,7 +3311,7 @@ ai_strategy_default = {
 		}		
 
 		min = 10
-		max = 10000
+		max = 1000
 	}
 	
 	# How many levels of barracks should the AI have
@@ -3762,9 +3744,9 @@ ai_strategy_default = {
 	# Which buildings should the AI subsidize
 	# Using a different value in a strategy will override this value
 	subsidies = {
-		# building_power_plant = must_have
-		# building_railway = must_have
-		# building_trade_center = must_have		
+		building_power_plant = must_have
+		building_railway = must_have
+		building_trade_center = must_have		
 	}
 	
 	# Specifying values here will override subsidy priorities while at war
@@ -5289,7 +5271,7 @@ ai_strategy_default = {
 								is_country_type = unrecognized
 							}
 						}
-					}					
+					}
 					has_technology_researched = colonization
 					institution_investment_level = {
 						institution = institution_colonial_affairs
@@ -5302,10 +5284,22 @@ ai_strategy_default = {
 					limit = { has_technology_researched = quinine }
 					add = 50
 				}
-
 				if = {
 					limit = { has_technology_researched = civilizing_mission }
-					add = 200		
+					add = 200	
+					if = {
+						limit = {
+							scope:target_country = {
+								OR = {
+									is_subject = no
+									top_overlord ?= {
+										is_country_type = unrecognized
+									}
+								}
+							}
+						}
+						add = 250
+					}					
 					
 					if = {
 						limit = {
@@ -5634,11 +5628,11 @@ ai_strategy_default = {
 					}					
 				}
 				add = 25
-
+				
 				if = {
 					limit = { has_technology_researched = quinine }
 					add = 25
-				}				
+				}	
 				
 				if = {
 					limit = { has_technology_researched = civilizing_mission }
@@ -5669,7 +5663,6 @@ ai_strategy_default = {
 					}
 					add = 250
 				}				
-
 				if = {
 					limit = {
 						c:DEI ?= this 
@@ -5706,7 +5699,7 @@ ai_strategy_default = {
 					}
 				}
 				add = 250
-			}		
+			}	
 			
 			if = {
 				limit = {
@@ -5716,8 +5709,9 @@ ai_strategy_default = {
 					scope:target_country = { NOT = { is_subject_of = root }	}
 				}
 				add = 25
-			}
+			}	
 			
+
 			multiply = {
 				value = "ai_ideological_opinion(scope:target_country)"
 				multiply = -0.05
