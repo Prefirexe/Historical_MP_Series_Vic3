@@ -11,7 +11,7 @@ base_values = {
 	country_weekly_innovation_max_add = 25 #was 50
 	country_tech_spread_add = 100 #was 25
 	
-	country_loan_interest_rate_add = 0.2
+	country_loan_interest_rate_add = 0.3
 	
 	country_legitimacy_govt_size_add = 1
 	
@@ -32,10 +32,10 @@ base_values = {
 	state_infrastructure_add = 3
 	state_infrastructure_from_automobiles_consumption_add = 0.25
 	
-	state_poor_expected_sol = 5
-	state_middle_expected_sol = 10
-	state_rich_expected_sol = 15
-	state_expected_sol_from_literacy = 0 #was 5
+	state_lower_strata_expected_sol_add = 5
+	state_middle_strata_expected_sol_add = 10
+	state_upper_strata_expected_sol_add = 15
+	state_expected_sol_from_literacy = 5
 	
 	state_farmers_investment_pool_contribution_add = 0.0625 # added 25% contribution to partially ofset huge base efficiency malus
 	state_shopkeepers_investment_pool_contribution_add = 0.0625 # added 25% contribution to partially ofset huge base efficiency malus
