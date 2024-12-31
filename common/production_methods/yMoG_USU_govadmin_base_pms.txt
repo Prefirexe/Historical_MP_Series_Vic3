@@ -7,7 +7,7 @@ pm_simple_organization = {
 	
 	country_modifiers = {
 		workforce_scaled = {
-			country_bureaucracy_add = 35
+			country_bureaucracy_add = 50
 
 		}
 	}	
@@ -20,7 +20,7 @@ pm_simple_organization = {
 
 	building_modifiers = {	
 		level_scaled = {
-			building_employment_clerks_add = 4000
+			building_employment_clerks_add = 2000
 		}
 	}		
 }		
@@ -34,7 +34,7 @@ pm_horizontal_drawer_cabinets = {
 	
 	country_modifiers = {
 		workforce_scaled = {
-			country_bureaucracy_add = 50
+			country_bureaucracy_add = 60
 		}
 	}
 	
@@ -50,7 +50,7 @@ pm_horizontal_drawer_cabinets = {
 		}			
 	
 		level_scaled = {
-			building_employment_clerks_add = 3500 # 4000
+			building_employment_clerks_add = 2000 # 4000
 		}
 	}		
 }
@@ -63,7 +63,7 @@ pm_vertical_filing_cabinets = {
 	
 	country_modifiers = {
 		workforce_scaled = {
-			country_bureaucracy_add = 65
+			country_bureaucracy_add = 75
 		}
 	}	
 	
@@ -79,7 +79,7 @@ pm_vertical_filing_cabinets = {
 		}	
 	
 		level_scaled = {
-			building_employment_clerks_add = 3000 # 4000
+			building_employment_clerks_add = 2000 # 4000
 		}
 	}	
 }
@@ -109,7 +109,7 @@ pm_switch_boards = {
 		}
 
 		level_scaled = {
-			building_employment_clerks_add = 2000 # 2500
+			building_employment_clerks_add = 1500 # 2500
 			building_employment_bureaucrats_add = 500 # 2500
 		}
 	}	
