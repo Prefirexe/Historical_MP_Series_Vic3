@@ -693,7 +693,7 @@ nationalism = {
 	modifier = {
 		country_authority_mult = 0.1
 		country_diplomatic_play_maneuvers_add = 20
-		country_infamy_decay_mult = 0.10
+		country_infamy_decay_mult = 0.30
 	}
 	
 	unlocking_technologies = {
@@ -941,7 +941,7 @@ civilizing_mission = {
 		country_institution_colonial_affairs_max_investment_add = 1
 		country_max_declared_interests_add = 1
 		country_diplomatic_play_maneuvers_add = 30
-		country_infamy_decay_mult = 0.10
+		country_infamy_decay_mult = 0.35
 		country_infamy_generation_against_unrecognized_mult = -0.25
 	}
 	
@@ -1115,7 +1115,7 @@ pan-nationalism = {
 	modifier = {
 		country_authority_mult = 0.1
 		country_infamy_generation_mult = -0.15
-		country_infamy_decay_mult = 0.20
+		country_infamy_decay_mult = 0.45
 	}
 	
 	unlocking_technologies = {
@@ -1318,7 +1318,7 @@ malaria_prevention = {
 	modifier = {
 		country_institution_colonial_affairs_max_investment_add = 1
 		country_institution_health_system_max_investment_add = 1
-		country_infamy_decay_mult = 0.40
+		country_infamy_decay_mult = 0.55
 	}
 	
 	unlocking_technologies = {
@@ -1474,7 +1474,7 @@ multilateral_alliances = {
 		country_diplomatic_play_maneuvers_add = 40
 		country_allow_multiple_alliances_bool = yes
 		country_infamy_generation_mult = -0.30
-		country_infamy_decay_mult = 0.80
+		country_infamy_decay_mult = 0.65
 	}
 	
 	unlocking_technologies = {	
@@ -1559,7 +1559,7 @@ mass_propaganda = {
 		state_expected_sol_from_literacy = 2 #was 1
 		country_agitator_slots_add = 1
 		country_infamy_generation_mult = -0.15
-		country_infamy_decay_mult = 1.40
+		country_infamy_decay_mult = 0.70
 	}
 	
 	unlocking_technologies = {
