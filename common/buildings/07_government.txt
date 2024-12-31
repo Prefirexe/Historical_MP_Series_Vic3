@@ -106,7 +106,7 @@ building_university = {
 
 	icon = "gfx/interface/icons/building_icons/building_university.dds"
 
-	required_construction = 400
+	required_construction = 300
 	
 	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_monuments.dds"
 }
