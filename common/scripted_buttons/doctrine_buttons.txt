@@ -1,0 +1,155 @@
+﻿# Mission Tactics
+doctrine_choice_mission_tactics_button = {
+    name = "doctrine_choice_mission_tactics_button"
+    desc = "doctrine_choice_mission_tactics_button_desc"
+
+    visible = { always = yes }
+
+    possible = {
+        has_technology_researched = napoleonic_warfare
+        NOT = { has_variable = doctrine_switch_cooldown }
+        hidden_trigger = {
+            NOT = { has_modifier = mission_tactics_modifier }
+        }
+    }
+
+    effect = {
+        add_modifier = { name = mission_tactics_modifier }
+        if = { limit = { has_modifier = wave_tactics_modifier } remove_modifier = wave_tactics_modifier }
+        if = { limit = { has_modifier = defensive_doctrine_modifier } remove_modifier = defensive_doctrine_modifier }
+        if = { limit = { has_modifier = mobility_doctrine_modifier } remove_modifier = mobility_doctrine_modifier }
+        if = { limit = { has_modifier = economic_warfare_modifier } remove_modifier = economic_warfare_modifier }
+        if = { limit = { has_modifier = combined_arms_modifier } remove_modifier = combined_arms_modifier }
+        set_variable = { name = doctrine_switch_cooldown years = 1 }
+    }
+}
+
+# Wave Tactics
+doctrine_choice_wave_tactics_button = {
+    name = "doctrine_choice_wave_tactics_button"
+    desc = "doctrine_choice_wave_tactics_button_desc"
+
+    visible = { always = yes }
+
+    possible = {
+        has_technology_researched = military_statistics
+        NOT = { has_variable = doctrine_switch_cooldown }
+        hidden_trigger = {
+            NOT = { has_modifier = wave_tactics_modifier }
+        }
+    }
+
+    effect = {
+        add_modifier = { name = wave_tactics_modifier }
+        if = { limit = { has_modifier = mission_tactics_modifier } remove_modifier = mission_tactics_modifier }
+        if = { limit = { has_modifier = defensive_doctrine_modifier } remove_modifier = defensive_doctrine_modifier }
+        if = { limit = { has_modifier = mobility_doctrine_modifier } remove_modifier = mobility_doctrine_modifier }
+        if = { limit = { has_modifier = economic_warfare_modifier } remove_modifier = economic_warfare_modifier }
+        if = { limit = { has_modifier = combined_arms_modifier } remove_modifier = combined_arms_modifier }
+        set_variable = { name = doctrine_switch_cooldown years = 1 }
+    }
+}
+
+# Defensive Doctrine
+doctrine_choice_defensive_doctrine_button = {
+    name = "doctrine_choice_defensive_doctrine_button"
+    desc = "doctrine_choice_defensive_doctrine_button_desc"
+
+    visible = { always = yes }
+
+    possible = {
+        has_technology_researched = trench_works
+        NOT = { has_variable = doctrine_switch_cooldown }
+        hidden_trigger = {
+            NOT = { has_modifier = defensive_doctrine_modifier }
+        }
+    }
+
+    effect = {
+        add_modifier = { name = defensive_doctrine_modifier }
+        if = { limit = { has_modifier = mission_tactics_modifier } remove_modifier = mission_tactics_modifier }
+        if = { limit = { has_modifier = wave_tactics_modifier } remove_modifier = wave_tactics_modifier }
+        if = { limit = { has_modifier = mobility_doctrine_modifier } remove_modifier = mobility_doctrine_modifier }
+        if = { limit = { has_modifier = economic_warfare_modifier } remove_modifier = economic_warfare_modifier }
+        if = { limit = { has_modifier = combined_arms_modifier } remove_modifier = combined_arms_modifier }
+        set_variable = { name = doctrine_switch_cooldown years = 1 }
+    }
+}
+
+# Mobility Doctrine
+doctrine_choice_mobility_doctrine_button = {
+    name = "doctrine_choice_mobility_doctrine_button"
+    desc = "doctrine_choice_mobility_doctrine_button_desc"
+
+    visible = { always = yes }
+
+    possible = {
+        has_technology_researched = mechanized_warfare
+        NOT = { has_variable = doctrine_switch_cooldown }
+        hidden_trigger = {
+            NOT = { has_modifier = mobility_doctrine_modifier }
+        }
+    }
+
+    effect = {
+        add_modifier = { name = mobility_doctrine_modifier }
+        if = { limit = { has_modifier = mission_tactics_modifier } remove_modifier = mission_tactics_modifier }
+        if = { limit = { has_modifier = wave_tactics_modifier } remove_modifier = wave_tactics_modifier }
+        if = { limit = { has_modifier = defensive_doctrine_modifier } remove_modifier = defensive_doctrine_modifier }
+        if = { limit = { has_modifier = economic_warfare_modifier } remove_modifier = economic_warfare_modifier }
+        if = { limit = { has_modifier = combined_arms_modifier } remove_modifier = combined_arms_modifier }
+        set_variable = { name = doctrine_switch_cooldown years = 1 }
+    }
+}
+
+# Economic Warfare
+doctrine_choice_economic_warfare_button = {
+    name = "doctrine_choice_economic_warfare_button"
+    desc = "doctrine_choice_economic_warfare_button_desc"
+
+    visible = { always = yes }
+
+    possible = {
+        has_technology_researched = wargaming
+        NOT = { has_variable = doctrine_switch_cooldown }
+        hidden_trigger = {
+            NOT = { has_modifier = economic_warfare_modifier }
+        }
+    }
+
+    effect = {
+        add_modifier = { name = economic_warfare_modifier }
+        if = { limit = { has_modifier = mission_tactics_modifier } remove_modifier = mission_tactics_modifier }
+        if = { limit = { has_modifier = wave_tactics_modifier } remove_modifier = wave_tactics_modifier }
+        if = { limit = { has_modifier = defensive_doctrine_modifier } remove_modifier = defensive_doctrine_modifier }
+        if = { limit = { has_modifier = mobility_doctrine_modifier } remove_modifier = mobility_doctrine_modifier }
+        if = { limit = { has_modifier = combined_arms_modifier } remove_modifier = combined_arms_modifier }
+        set_variable = { name = doctrine_switch_cooldown years = 1 }
+    }
+}
+
+# Combined Arms
+doctrine_choice_combined_arms_button = {
+    name = "doctrine_choice_combined_arms_button"
+    desc = "doctrine_choice_combined_arms_button_desc"
+
+    visible = { always = yes }
+
+    possible = {
+        has_technology_researched = general_staff
+        NOT = { has_variable = doctrine_switch_cooldown }
+        hidden_trigger = {
+            NOT = { has_modifier = combined_arms_modifier }
+        }
+    }
+
+    effect = {
+        add_modifier = { name = combined_arms_modifier }
+        if = { limit = { has_modifier = mission_tactics_modifier } remove_modifier = mission_tactics_modifier }
+        if = { limit = { has_modifier = wave_tactics_modifier } remove_modifier = wave_tactics_modifier }
+        if = { limit = { has_modifier = defensive_doctrine_modifier } remove_modifier = defensive_doctrine_modifier }
+        if = { limit = { has_modifier = mobility_doctrine_modifier } remove_modifier = mobility_doctrine_modifier }
+        if = { limit = { has_modifier = economic_warfare_modifier } remove_modifier = economic_warfare_modifier }
+        set_variable = { name = doctrine_switch_cooldown years = 1 }
+    }
+}
