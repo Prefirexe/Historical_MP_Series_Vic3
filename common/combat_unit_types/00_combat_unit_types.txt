@@ -78,7 +78,7 @@ combat_unit_type_line_infantry = {
     group = combat_unit_group_infantry
 
     upkeep_modifier = {
-        goods_input_small_arms_add = 0.5
+        goods_input_small_arms_add = 1
     }
 	
     can_build_conscript = {
@@ -90,7 +90,7 @@ combat_unit_type_line_infantry = {
     battle_modifier = {
         unit_offense_add = 15
         unit_defense_add = 20
-        unit_morale_loss_add = 12 #10
+        unit_morale_loss_add = 10
     }
 
 	unlocking_technologies = { line_infantry }
@@ -146,13 +146,13 @@ combat_unit_type_skirmish_infantry = {
     }
 
     upkeep_modifier = {
-        goods_input_small_arms_add = 1.5
-        goods_input_ammunition_add = 0.5
+        goods_input_small_arms_add = 2
+        goods_input_ammunition_add = 1
     }
 
     battle_modifier = {
         unit_offense_add = 20
-        unit_defense_add = 30
+        unit_defense_add = 25
         unit_morale_loss_add = 10
     }
 
@@ -208,13 +208,13 @@ combat_unit_type_trench_infantry = {
     }
 
     upkeep_modifier = {
-        goods_input_small_arms_add = 2.5
-        goods_input_ammunition_add = 1.5
+        goods_input_small_arms_add = 3
+        goods_input_ammunition_add = 2
     }
     
     battle_modifier = {
-        unit_offense_add = 30
-        unit_defense_add = 40
+        unit_offense_add = 25
+        unit_defense_add = 35
         unit_morale_loss_add = 8
     }
 
@@ -269,14 +269,14 @@ combat_unit_type_squad_infantry = {
     }
 
     upkeep_modifier = {
-        goods_input_small_arms_add = 2.5
-        goods_input_ammunition_add = 2.5
+        goods_input_small_arms_add = 3
+        goods_input_ammunition_add = 3
         goods_input_radios_add = 1
     }
     
     battle_modifier = {
-        unit_offense_add = 40
-        unit_defense_add = 50
+        unit_offense_add = 30
+        unit_defense_add = 40
         unit_morale_loss_add = 6
     }
 
@@ -330,18 +330,17 @@ combat_unit_type_mechanized_infantry = {
     }
 
     upkeep_modifier = {
-        goods_input_small_arms_add = 2.5
-        goods_input_ammunition_add = 2.5
+        goods_input_small_arms_add = 3
+        goods_input_ammunition_add = 3
         goods_input_oil_add = 1
         goods_input_radios_add = 1
-        goods_input_automobiles_add = 1
+        goods_input_tanks_add = 1
     }
     
     battle_modifier = {
-        unit_offense_add = 50
-        unit_defense_add = 65
+        unit_offense_add = 35
+        unit_defense_add = 45
         unit_morale_loss_add = 4
-        unit_defense_mult = 0.1
         unit_devastation_mult = 0.1
     }
 
@@ -465,8 +464,8 @@ combat_unit_type_mobile_artillery = {
     }
     
     battle_modifier = {
-        unit_offense_add = 35
-        unit_defense_add = 20
+        unit_offense_add = 30
+        unit_defense_add = 15
         unit_morale_loss_add = 8
         unit_kill_rate_add = 0.2
         unit_devastation_mult = 0.15
@@ -533,10 +532,10 @@ combat_unit_type_shrapnel_artillery = {
     }
 
     battle_modifier = {
-        unit_offense_add = 60
-        unit_defense_add = 30
+        unit_offense_add = 45
+        unit_defense_add = 25
         unit_morale_loss_add = 6
-        unit_kill_rate_add = 0.35
+        unit_kill_rate_add = 0.3
         unit_devastation_mult = 0.15
     }
 
@@ -601,10 +600,10 @@ combat_unit_type_siege_artillery = {
     }
 
     battle_modifier = {
-        unit_offense_add = 80
-        unit_defense_add = 45
+        unit_offense_add = 55
+        unit_defense_add = 30
         unit_morale_loss_add = 6
-        unit_kill_rate_add = 0.4 #0.25
+        unit_kill_rate_add = 0.25
         unit_devastation_mult = 0.2
     }
 
@@ -667,8 +666,8 @@ combat_unit_type_heavy_tank = {
     }
 
     battle_modifier = {
-        unit_offense_add = 105
-        unit_defense_add = 55
+        unit_offense_add = 70
+        unit_defense_add = 35
         unit_morale_loss_add = 4
         unit_kill_rate_add = 0.25
         unit_morale_damage_mult = 0.15
@@ -703,7 +702,7 @@ combat_unit_type_hussars = {
     }
 
     battle_modifier = {
-        unit_offense_add = 10
+        unit_offense_add = 15
         unit_defense_add = 10
         unit_morale_loss_add = 10
     }
@@ -766,12 +765,12 @@ combat_unit_type_dragoons = {
     
     upkeep_modifier = {
         goods_input_grain_add = 1
-        goods_input_small_arms_add = 1.5
+        goods_input_small_arms_add = 2
     }
 
     battle_modifier = {
-        unit_offense_add = 15
-        unit_defense_add = 20
+        unit_offense_add = 20
+        unit_defense_add = 25
         unit_morale_loss_add = 8
         unit_occupation_mult = 0.3
         #should get modifiers to mobile/surprise battle conditions appearing
@@ -828,14 +827,13 @@ combat_unit_type_cuirassiers = {
     }
     
     upkeep_modifier = {
-        goods_input_grain_add = 2
-        goods_input_small_arms_add = 0.5
-        goods_input_iron_add = 1
+        goods_input_grain_add = 1
+        goods_input_small_arms_add = 2
     }
 
     battle_modifier = {
-        unit_offense_add = 20
-        unit_defense_add = 15
+        unit_offense_add = 25
+        unit_defense_add = 20
         unit_morale_loss_add = 8
         unit_occupation_mult = 0.3
     }
@@ -892,13 +890,13 @@ combat_unit_type_lancers = {
     
     upkeep_modifier = {
         goods_input_grain_add = 2
-        goods_input_small_arms_add = 1.5
-		goods_input_steel_add = 1
+        goods_input_small_arms_add = 2
+		goods_input_iron_add = 2
     }
 
     battle_modifier = {
-        unit_offense_add = 25
-        unit_defense_add = 15
+        unit_offense_add = 30
+        unit_defense_add = 20
         unit_morale_loss_add = 6
         unit_kill_rate_add = 0.05
         unit_morale_loss_mult = 0.05
@@ -964,8 +962,8 @@ combat_unit_type_light_tanks = {
     }
 
     battle_modifier = {
-        unit_offense_add = 75
-        unit_defense_add = 75
+        unit_offense_add = 45
+        unit_defense_add = 45
         unit_morale_loss_add = 4
         unit_devastation_mult = 0.1
         unit_occupation_mult = 0.3
