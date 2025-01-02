@@ -101,6 +101,15 @@
 				set_ig_trait = ig_trait:ig_trait_khalsa
 				set_ig_trait = ig_trait:ig_trait_patriotic_fervor
 			}
+			# RC Russia
+			else_if = {
+				limit = {
+					owner = { c:RUS ?= this}
+				}
+			set_ig_trait = ig_trait:ig_trait_materiel_waste
+			set_ig_trait = ig_trait:ig_trait_veteran_consultation
+			set_ig_trait = ig_trait:ig_trait_za_rodinu
+			}
 			else = {
 				set_ig_trait = ig_trait:ig_trait_materiel_waste
 				set_ig_trait = ig_trait:ig_trait_veteran_consultation
@@ -153,7 +162,6 @@
 				add_ideology = ideology_sikh_militancy
 			}
 		}
-
 		# HMPS Eight Banners
 
 		if = {

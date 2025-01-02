@@ -33,6 +33,10 @@
 mission_tactics_modifier: "Auftragstaktik"
 wave_tactics_modifier: "Human Waves"
 defensive_doctrine_modifier: "Defensive Doctrine"
-mobility_doctrine_modifier: "Mmaneuver warfare"
+mobility_doctrine_modifier: "Maneuver warfare"
 economic_warfare_modifier: "Quantity over Quality"
 combined_arms_modifier: "Concentrated Firepower"
+
+# IG TRAITS
+ig_trait_za_rodinu: "Za rodinu!"
+ig_trait_za_rodinu_desc: "For the motherland!"
