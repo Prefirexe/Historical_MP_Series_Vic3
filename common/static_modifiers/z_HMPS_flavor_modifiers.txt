@@ -721,7 +721,7 @@ received_congo = {
 prolonged_war = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_negative.dds
 	country_legitimacy_base_add = -20
-	interest_group_in_government_attraction_mult = -0.25
+	interest_group_in_government_attraction_mult = -0.20
 	country_loan_interest_rate_add = 0.05
 }
 
@@ -736,4 +736,16 @@ modifier_aus_post_rev = {
 	interest_group_ig_landowners_pol_str_mult = 0.10
 	country_prestige_add = 100
 	country_legitimacy_base_add = 15
+}
+modifier_ger_democrat_surge = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_positive.dds
+	political_movement_pop_attraction_mult = 0.25
+}
+modifier_roonsreform_gap_theory_ig = {
+	icon = gfx\interface\icons\timed_modifier_icons\modifier_fist_negative.dds
+	interest_group_approval_add = -2
+}
+modifier_roonsreform_gap_theory = {
+	icon = gfx\interface\icons\timed_modifier_icons\modifier_fist_negative.dds
+	country_law_enactment_time_mult = -0.4
 }
