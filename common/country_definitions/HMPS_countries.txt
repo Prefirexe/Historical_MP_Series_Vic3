@@ -1,5 +1,5 @@
 ﻿USA = {
-	color = { 69  157  208 }
+	color = { 66  94  193 }
 	
 	country_type = colonial
 	
@@ -166,7 +166,7 @@ RUS = {
 }
 
 DEN = {
-	color = rgb { 99 63 60 }
+	color = { 198 6 0 }
 	
 	country_type = recognized
 
@@ -415,36 +415,4 @@ NEN = {
 	
 	cultures = { yankee }
 	capital = STATE_GREATER_MASSACHUSETTS
-}
-
-SWE = {
-	color = { 0 106 167 }
-	
-	country_type = recognized
-
-	tier = kingdom
-	
-	cultures = { swedish }
-	capital = STATE_SVEALAND
-}
-TUR = {
-	color = { 126  203  120 }
-	
-	country_type = recognized
-
-	tier = empire
-	
-	cultures = { turkish }
-	capital = STATE_EASTERN_THRACE
-}
-
-EGY = {
-	color = { 255  220  104 } 
-	
-	country_type = unrecognized
-	
-	tier = kingdom
-	
-	cultures = { misri }
-	capital = STATE_LOWER_EGYPT
 }
