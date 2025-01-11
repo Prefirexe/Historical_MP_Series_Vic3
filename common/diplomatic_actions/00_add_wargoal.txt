@@ -68,7 +68,7 @@ demand_conquest = {
 				country = root
 				value = {
 					value = "scope:second_state.ai_state_value(scope:target_country)"
-					divide = 8
+					divide = 10
 					max = 50
 					min = 10						
 				}
@@ -356,10 +356,7 @@ demand_treaty_port = {
 			create_incident = {
 				country = root
 				value = {
-					value = "scope:second_state.ai_state_value(scope:target_country)"
-					divide = 8
-					max = 50
-					min = 10						
+					value = 15					
 				}
 			}		
 		}
