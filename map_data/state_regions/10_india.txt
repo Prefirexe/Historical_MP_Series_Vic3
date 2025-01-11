@@ -576,7 +576,7 @@ STATE_HYDERABAD = {
     arable_land = 4000
     capped_resources = {
         bg_coal_mining = 22
-        bg_gold_mining = 10
+        bg_gold_mining = 2
         bg_logging = 8
         bg_millet_farms = 80
         bg_livestock_ranches = 23
@@ -588,7 +588,7 @@ STATE_HYDERABAD = {
     resource = {
         type = "bg_gold_fields"
         depleted_type = "bg_gold_mining"
-        amount = 10
+        amount = 2
     }
 }
 
@@ -615,12 +615,12 @@ STATE_BOMBAY = {
         bg_silk_plantations = 80
         bg_banana_plantations = 80
 		bg_coffee_plantations = 20
-        bg_gold_mining = 5
+        bg_gold_mining = 2
     }
     resource = {
         type = "bg_gold_fields"
         depleted_type = "bg_gold_mining"
-        amount = 5
+        amount = 2
     }
     naval_exit_id = 3048
 }
