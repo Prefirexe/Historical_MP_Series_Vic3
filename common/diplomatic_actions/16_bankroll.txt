@@ -6,7 +6,7 @@
 	should_notify_third_parties = no
 
 	unlocking_technologies = {
-		#central_banking	### commented out tech lock
+	#	central_banking
 	}
 	
 	selectable = {
@@ -20,14 +20,14 @@
 		}
 	}
 	
-	possible = {		
-		scope:target_country = {
+	possible = {
+        scope:target_country = {
             OR = {
                 is_at_war = no
                 is_diplomatic_play_ally_of = root
             }
-		}
-	}
+        }
+    }
 	
 	pact = {	
 		cost = 100
@@ -41,6 +41,7 @@
 		relations_improvement_max = 80
 		
 		income_transfer = 0.20
+		max_paying_country_income_to_transfer = 0.10
 		second_country_gets_income_transfer = yes
 		income_transfer_based_on_second_country = yes
 		
@@ -89,19 +90,19 @@
 			}
 		}
 
-		requirement_to_maintain = {
+	 	requirement_to_maintain = {
 			trigger = {
 				custom_tooltip = {
 					text = DIPLO_ACTION_RELATIONS_POOR_OR_LESS_NOT
 					scope:target_country.relations:root > relations_threshold:poor
 				}		
 			}
-
+			
 			show_about_to_break_warning = {
 				scope:target_country.relations:root <= -17 # this is: poor + 3
 				scope:target_country.relations_change_rate:root < 0
 			}					
-		}
+		}	
 
 		requirement_to_maintain = {
 			trigger = {
@@ -113,7 +114,7 @@
 					}				
 				}
 			}
-		}			
+		}				
 	
 		requirement_to_maintain = {
 			trigger = {
@@ -129,11 +130,12 @@
 				country_rank >= scope:target_country.country_rank
 			}
 		}
+
 		requirement_to_maintain = {
 			trigger = {
 				in_default = no
 			}
-		}
+		}			
 	}
 	
 	ai = {
@@ -271,7 +273,7 @@
 	
 		propose_score = {
 			value = 10
-			
+
 			if = {
 				limit = {
 					exists = c:CIR
