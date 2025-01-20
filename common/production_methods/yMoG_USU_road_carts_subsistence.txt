@@ -1,15 +1,4 @@
-﻿### Mines & Plantations both use this.
-pm_road_carts = {
-	texture = "gfx/interface/icons/production_method_icons/no_rail_transport.dds"
-	building_modifiers = {
-		workforce_scaled = {
-			# input goods
-			goods_input_transportation_add = 1
-		}
-	}
-}
-
-### Subsistence Production
+﻿### Subsistence Production
 default_building_subsistence_farms = {
 	texture = "gfx/interface/icons/production_method_icons/subsistence_farming.dds"
 	
