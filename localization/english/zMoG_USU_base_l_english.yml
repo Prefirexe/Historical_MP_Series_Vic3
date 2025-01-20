@@ -40,6 +40,7 @@
     USU_pmg_public_parklands: "Parklands Usage"
     
     # PMs
+    pm_rp_anchorage:0 "Anchorage"
     pm_rp_small_port:0 "Riverside Piers"
     pm_rp_industrial_port:0 "Industrial Ports"
     pm_rp_modern_port:0 "Modern Ports"
