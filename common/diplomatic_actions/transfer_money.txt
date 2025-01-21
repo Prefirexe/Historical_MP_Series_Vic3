@@ -6,7 +6,7 @@
 	requires_approval = no
 	
 	unlocking_technologies = {
-		central_banking
+	#	central_banking
 	}
 
 	potential = {
