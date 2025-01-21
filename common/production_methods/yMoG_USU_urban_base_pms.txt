@@ -30,10 +30,11 @@ pm_market_stalls = {
 	
 	state_modifiers = {
 		level_scaled = {
-			state_construction_mult = -0.04
+			state_construction_mult = 0.0005					# The existence of the urban infrastructure (empty roads, refurbishable buildings, etc.) makes construction a breeze.
 		}
 		
 		workforce_scaled = {
+			state_construction_mult = -0.0005					# The more people are utilising the urban spaces though, the more this benefit is negated by all the people and businesses in the way.
 			building_food_industry_throughput_add = 0.01
 			building_textile_mills_throughput_add = 0.01
 			building_furniture_manufacturies_throughput_add = 0.01
@@ -77,10 +78,11 @@ pm_market_squares = {
 	
 	state_modifiers = {
 		level_scaled = {
-			state_construction_mult = -0.02
+			state_construction_mult = 0.001
 		}
 		
 		workforce_scaled = {
+			state_construction_mult = -0.001
 			building_food_industry_throughput_add = 0.01
 			building_textile_mills_throughput_add = 0.01
 			building_furniture_manufacturies_throughput_add = 0.01
@@ -124,10 +126,11 @@ pm_covered_markets = {
 	
 	state_modifiers = {
 		level_scaled = {
-			state_construction_mult = -0.01
+			state_construction_mult = 0.0015
 		}
 		
 		workforce_scaled = {
+			state_construction_mult = -0.0015
 			building_food_industry_throughput_add = 0.01
 			building_textile_mills_throughput_add = 0.01
 			building_furniture_manufacturies_throughput_add = 0.01
@@ -173,10 +176,11 @@ pm_arcades = {
 	
 	state_modifiers = {
 		level_scaled = {
-			state_construction_mult = -0.005
+			state_construction_mult = 0.002
 		}
 		
 		workforce_scaled = {
+			state_construction_mult = -0.002
 			building_food_industry_throughput_add = 0.01
 			building_textile_mills_throughput_add = 0.01
 			building_furniture_manufacturies_throughput_add = 0.01
