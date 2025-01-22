@@ -622,7 +622,7 @@ NDiplomacy = {
 	INFAMY_THRESHOLD_INFAMOUS = 25			# Above this, countries are considered infamous and get related penalties
 	INFAMY_THRESHOLD_NOTORIOUS = 50			# Above this, countries are considered notorious and get related penalties
 	INFAMY_THRESHOLD_PARIAH = 100			# Above this, countries are considered pariah and get related penalties
-	BASE_YEARLY_INFAMY_DECAY_RATE = 10.0 	# Decay rate of infamy per year
+	BASE_YEARLY_INFAMY_DECAY_RATE = 5 	# Decay rate of infamy per year
 
 	# Tension is used instead of relations by colonizable countries
 	MIN_TENSION = 0
@@ -715,13 +715,13 @@ NDiplomacy = {
 	WAR_GOAL_CONTAIN_THREAT_YEARS_SINCE_CONQUEST = 15
 	WAR_GOAL_REGIME_CHANGE_MONTHS = 60 # Government in country with forced regime change is locked in for this number of months [>= 0]
 	WAR_GOAL_REGIME_CHANGE_MAX_IDEOLOGICAL_OPINION = 0 # If ideological opinion is above this, regime change can't be used
-	WAR_GOAL_REGIME_CHANGE_MIN_LAW_PROGRESSIVENESS_DIFFERENCE = -1000 # If the difference between the target wargoal holder's laws in a law group are not at least this, don't change it as part of regime change
+	WAR_GOAL_REGIME_CHANGE_MIN_LAW_PROGRESSIVENESS_DIFFERENCE = 0 # If the difference between the target wargoal holder's laws in a law group are not at least this, don't change it as part of regime change
 	WAR_GOAL_REGIME_CHANGE_NUM_TIMES_TO_LOOP_THROUGH_LAWS = 100	# How many times do we loop through the laws to check what to change? This is done more than once in order to allow laws that are unlocked by other laws to be changed
 	WAR_GOAL_INCREASE_AUTONOMY_MIN_LIBERTY_DESIRE = 75 # A subject must have at least this much LD to use the increase autonomy wargoal
 	WAR_GOAL_INDEPENDENCE_MIN_LIBERTY_DESIRE = 90 # A subject must have at least this much LD to use the independence wargoal
 	
 	WAR_GOAL_INFAMY_POPULATION_SCALING_FACTOR = 14000 # The amount of population by which the factor below is multiplied
-	WAR_GOAL_INFAMY_POPULATION_SCALING_MULTIPLIER = 0.01 # For each WAR_GOAL_INFAMY_POPULATION_SCALING_FACTOR population in a country/state, multiply infamy by this
+	WAR_GOAL_INFAMY_POPULATION_SCALING_MULTIPLIER = 0.02 # For each WAR_GOAL_INFAMY_POPULATION_SCALING_FACTOR population in a country/state, multiply infamy by this
 	WAR_GOAL_INFAMY_POPULATION_SCALING_MULTIPLIER_MAX_PER_STATE = 11.25 # Infamy population multiplier can't be higher than this for each state affected
 	WAR_GOAL_INFAMY_POPULATION_SCALING_MULTIPLIER_MAX_TOTAL = 11.25 # Infamy population multiplier can't be higher than this, regardless of number of states affected
 	WAR_GOAL_INFAMY_HOMELAND_FACTOR = -0.5 # Infamy is adjusted by this if the states taken/puppeted etc are Homelands of the aggressor
