@@ -1,4 +1,8 @@
-﻿### Subsistence Production
+﻿### Mines & Plantations both use this.
+pm_road_carts = {
+}
+
+### Subsistence Production
 default_building_subsistence_farms = {
 	texture = "gfx/interface/icons/production_method_icons/subsistence_farming.dds"
 	
