@@ -583,53 +583,11 @@ demand_ban_slavery = {
 	
 	ai = {
 		evaluation_chance = {
-			value = 0.1
-				if = {
-				limit = {  has_game_rule = ai_wargoals_blocked }
-				add = {
-					value = country_rank
-					multiply = 0
-				}				
-			}
-			if = {
-				limit = { root = { infamy >= 49.9 } }
-				add = {
-					value = country_rank
-					multiply = 0
-				}				
-			}
-		}			
-		
-		if = {
-				limit = { country_rank >= rank_value:major_power }
-				add = {
-					value = country_rank
-					multiply = 0.01
-				}				
-			}
-		will_propose = { 
-		OR = {
-			NOT = { root = { infamy >= 24.9 } }
-			NOT = { has_game_rule = ai_wargoals_blocked }
-			NOT = { has_modifier = ai_wargoal_are_blocked }
-		  }
-		}
+			value = 0				
+		}		
+	
 		propose_score = {
-			value = 10
-			if = {
-				limit = { root = { infamy >= 24.9 } }
-				add = {
-					value = country_rank
-					multiply = 0
-				}				
-			}
-			if = {
-				limit = { has_game_rule = ai_wargoals_blocked }
-				add = {
-					value = country_rank
-					multiply = 0
-				}				
-			}
+			value = 0
 		}
 	}
 }
@@ -692,53 +650,11 @@ demand_iraqi_freedom = {
 	
 	ai = {
 		evaluation_chance = {
-			value = 0.03
-				if = {
-				limit = {  has_game_rule = ai_wargoals_blocked }
-				add = {
-					value = country_rank
-					multiply = 0
-				}				
-			}
-			if = {
-				limit = { root = { infamy >= 49.9 } }
-				add = {
-					value = country_rank
-					multiply = 0
-				}				
-			}
-		}			
-		
-		if = {
-				limit = { country_rank >= rank_value:major_power }
-				add = {
-					value = country_rank
-					multiply = 0.01
-				}				
-			}
-		will_propose = { 
-		OR = {
-			NOT = { root = { infamy >= 24.9 } }
-			NOT = { has_game_rule = ai_wargoals_blocked }
-			NOT = { has_modifier = ai_wargoal_are_blocked }
-		  }
-		}
+			value = 0				
+		}		
+	
 		propose_score = {
-			value = 10
-			if = {
-				limit = { root = { infamy >= 24.9 } }
-				add = {
-					value = country_rank
-					multiply = 0
-				}				
-			}
-			if = {
-				limit = { has_game_rule = ai_wargoals_blocked }
-				add = {
-					value = country_rank
-					multiply = 0
-				}				
-			}
+			value = 0
 		}
 	}
 }
@@ -901,45 +817,11 @@ demand_standard_oil = { #investment rights
 	
 	ai = {
 		evaluation_chance = {
-			value = 0.03
-				if = {
-				limit = {  has_game_rule = ai_wargoals_blocked }
-				add = {
-					value = country_rank
-					multiply = 0
-				}				
-			}
-		if = {
-				limit = { root = { infamy >= 49.9 } }
-				add = {
-					value = country_rank
-					multiply = 0
-				}				
-			}
-		}			
-		will_propose = { 
-		OR = {
-			NOT = { root = { infamy >= 24.9 } }
-			NOT = { has_game_rule = ai_wargoals_blocked }
-			NOT = { has_modifier = ai_wargoal_are_blocked }
-		  }
-		}
+			value = 0				
+		}		
+	
 		propose_score = {
-			value = 10
-			if = {
-				limit = { root = { infamy >= 24.9 } }
-				add = {
-					value = country_rank
-					multiply = 0
-				}				
-			}
-			if = {
-				limit = { has_game_rule = ai_wargoals_blocked }
-				add = {
-					value = country_rank
-					multiply = 0
-				}				
-			}
+			value = 0
 		}
 	}
 }
