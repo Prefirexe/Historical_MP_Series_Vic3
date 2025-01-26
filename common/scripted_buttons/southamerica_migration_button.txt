@@ -2,8 +2,6 @@
 	name = southamerica_migration_button
 	desc = southamerica_migration_button_desc
 
-	visible = { always = no }
-
 	possible = {
 		hidden_trigger = {
 			religion = { has_discrimination_trait = christian } #HMPS
