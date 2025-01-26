@@ -7,7 +7,7 @@ pm_butchering_tools = {
 	building_modifiers = {				
 		workforce_scaled = {
 			goods_input_tools_add = 2
-			goods_output_meat_add = 6
+			goods_output_meat_add = 5
 		}
 		
 		level_scaled = {
@@ -31,8 +31,8 @@ pm_slaughterhouses = {
 	}	
 	building_modifiers = {
 		workforce_scaled = {
-			goods_input_tools_add = 6
-			goods_output_meat_add = 16
+			goods_input_tools_add = 4
+			goods_output_meat_add = 15
 		}
 		
 		level_scaled = {
@@ -58,8 +58,8 @@ pm_mechanized_slaughtering = {
 	building_modifiers = {
 		workforce_scaled = {
 			goods_input_tools_add = 8
-			goods_input_coal_add = 4
-			goods_output_meat_add = 28
+			goods_input_coal_add = 5
+			goods_output_meat_add = 30
 		}
 		
 		level_scaled = {
@@ -84,9 +84,9 @@ pm_refrigerated_workspaces = {
 	}
 	building_modifiers = {
 		workforce_scaled = {
-			goods_input_tools_add = 8
-			goods_input_electricity_add = 4
-			goods_output_meat_add = 40
+			goods_input_tools_add = 10
+			goods_input_electricity_add = 5
+			goods_output_meat_add = 45
 		}
 		
 		level_scaled = {
