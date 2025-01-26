@@ -6,7 +6,6 @@
 
 	possible = {
 		hidden_trigger = {
-			has_variable = enable_sa_migration_button
 			religion = { has_discrimination_trait = christian } #HMPS
 		}
 		# Note that this closely reflects triggers in the event. Do not change one without changing both

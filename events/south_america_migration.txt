@@ -155,7 +155,6 @@ sa_migration.2 = {
 		default_option = yes
 		custom_tooltip = {
 			text = sa_migration_button_exists_tt
-			set_variable = enable_sa_migration_button
 		}
 		if = {
 			limit = {
