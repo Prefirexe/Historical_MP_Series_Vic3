@@ -14,7 +14,7 @@ pm_market_stalls = {
 			goods_input_fabric_add = 1
 			goods_input_wood_add = 2
 			goods_input_usu_logistics_add = 1
-			goods_output_services_add = 18
+			goods_output_services_add = 20
 		}
 		
 		level_scaled = {
@@ -30,7 +30,7 @@ pm_market_stalls = {
 	
 	state_modifiers = {
 		level_scaled = {
-			state_construction_mult = 0.0005					# The existence of the urban infrastructure (empty roads, refurbishable buildings, etc.) makes construction a breeze.
+			state_construction_mult = -0.04
 		}
 		
 		workforce_scaled = {
@@ -61,7 +61,7 @@ pm_market_squares = {
 			goods_input_glass_add = 1
 			goods_input_tools_add = 0.5
 			goods_input_usu_logistics_add = 2
-			goods_output_services_add = 29
+			goods_output_services_add = 30
 		}
 		
 		level_scaled = {
@@ -78,7 +78,7 @@ pm_market_squares = {
 	
 	state_modifiers = {
 		level_scaled = {
-			state_construction_mult = 0.001
+			state_construction_mult = -0.02
 		}
 		
 		workforce_scaled = {
@@ -109,7 +109,7 @@ pm_covered_markets = {
 			goods_input_tools_add = 1
 			goods_input_fabric_add = 1
 			goods_input_usu_logistics_add = 3
-			goods_output_services_add = 42
+			goods_output_services_add = 45
 		}
 		
 		level_scaled = {
@@ -126,7 +126,7 @@ pm_covered_markets = {
 	
 	state_modifiers = {
 		level_scaled = {
-			state_construction_mult = 0.0015
+			state_construction_mult = -0.01
 		}
 		
 		workforce_scaled = {
@@ -159,7 +159,7 @@ pm_arcades = {
 			goods_input_hardwood_add = 2
 			goods_input_electricity_add = 1
 			goods_input_usu_logistics_add = 4
-			goods_output_services_add = 55
+			goods_output_services_add = 60
 		}
 		
 		level_scaled = {
@@ -176,7 +176,7 @@ pm_arcades = {
 	
 	state_modifiers = {
 		level_scaled = {
-			state_construction_mult = 0.002
+			state_construction_mult = -0.005
 		}
 		
 		workforce_scaled = {
