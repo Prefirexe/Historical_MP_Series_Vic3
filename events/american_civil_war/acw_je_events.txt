@@ -454,59 +454,12 @@ acw_je_events.5 = {
 	}
 
 	immediate = {
-		if = {
-			limit = {
-				has_variable = csa_will_spawn_var
-			}
-			random_scope_state = {
-				limit = {
-					is_slave_state = yes
-				}
-				save_scope_as = csa_capital
-			}
-			create_country = {
-				tag = CSA
-				origin = this
-				state = scope:csa_capital
-				save_scope_as = csa_scope
-				on_created = {
-					# Re-enslave pops if the ACW happens after slavery has been abolished
-					if = {
-						limit = {
-							c:USA = {
-								has_variable = slavery_recently_abolished
-							}						
-						}
-						
-						every_scope_state = {
-							enslave_discriminated_farm_workers = yes
-						}					
-					}
-				}
-			}
-			every_scope_state = {
-				limit = {
-					is_slave_state = yes 
-				}
-				set_state_owner = c:CSA
-				set_state_type = incorporated
-				state_region = {
-					add_claim = root
-				}
-			}
-		}
 		set_global_variable = {
 			name = american_civil_war
 			value = yes
 		}
 		c:CSA = {
 			set_capital = STATE_VIRGINIA
-			
-			create_diplomatic_play = {
-				type = dp_revolution
-				target_state = c:USA.capital
-				#annex_as_civil_war = yes
-			}
 		}
 		random_diplomatic_play = {
 			limit = {
