@@ -1,42 +1,4 @@
 ﻿l_english:
-  je_doctrine_choice: "Choose a Military Doctrine"
-  je_doctrine_choice_reason: "Select a doctrine to determine bonuses and penalties for your army. You can change your military doctrin every year."
-  je_doctrine_choice_status: "In preparing for battle I have always found that plans are useless, but planning is indispensable. - Sun Tzu"
-
-  # Mission Tactics
-  doctrine_choice_mission_tactics_button:0 "Auftragstaktik"
-  doctrine_choice_mission_tactics_button_desc:0 "Give autonomy to your troops for maximum flexibility."
-
-  # Wave Tactics
-  doctrine_choice_wave_tactics_button:0 "Human Waves"
-  doctrine_choice_wave_tactics_button_desc:0 "Utilize overwhelming numbers and relentless assaults to break enemy lines."
-
-  # Defensive Doctrine
-  doctrine_choice_defensive_doctrine_button:0 "Defensive Doctrine"
-  doctrine_choice_defensive_doctrine_button_desc:0 "Prioritize strong defensive positions and fortifications to protect your territory."
-
-  # Mobility Doctrine
-  doctrine_choice_mobility_doctrine_button:0 "Maneuver Warfare"
-  doctrine_choice_mobility_doctrine_button_desc:0 "Emphasize rapid deployment and maneuverability to outpace and outflank enemies."
-
-  # Economic Warfare
-  doctrine_choice_economic_warfare_button:0 "Quantity over Quality"
-  doctrine_choice_economic_warfare_button_desc:0 "Quantity has a quality all its own. - Joseph Stalin"
-
-  # Combined Arms
-  doctrine_choice_combined_arms_button:0 "Concentrated Firepower"
-  doctrine_choice_combined_arms_button_desc:0 "Concentrate Firepower to maximize battlefield effectiveness."
-
-  # Cooldown Tooltip
-  doctrine_choice_button_cooldown:0 "This doctrine cannot be changed for one year after selection."
-
-mission_tactics_modifier: "Auftragstaktik"
-wave_tactics_modifier: "Human Waves"
-defensive_doctrine_modifier: "Defensive Doctrine"
-mobility_doctrine_modifier: "Maneuver warfare"
-economic_warfare_modifier: "Quantity over Quality"
-combined_arms_modifier: "Concentrated Firepower"
-
 # IG TRAITS
 ig_trait_za_rodinu: "Za rodinu!"
 ig_trait_za_rodinu_desc: "For the motherland!"
