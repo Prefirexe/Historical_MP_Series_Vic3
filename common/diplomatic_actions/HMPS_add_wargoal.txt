@@ -78,66 +78,11 @@ demand_conquest = {
 	
 	ai = {
 		evaluation_chance = {
-			value = 0.25	
-			if = {
-				limit = { root = { infamy >= 24.9 } }
-				add = {
-					value = country_rank
-					multiply = 0
-				}				
-			}
-			if = {
-				limit = { has_game_rule = ai_wargoals_blocked }
-				add = {
-					value = country_rank
-					multiply = 0
-				}				
-			}
+			value = 0				
 		}		
-		
-		will_select_as_second_state = {
-			is_incorporated = no		
-		}	
-		
-		will_propose_with_states = {
-			exists = scope:second_state
-			
-			# The AI only uses take state on disconnected colonial bits of subjects which are adjacent to their own lands
-			NOT = {
-				any_neighbouring_state = {
-					owner = root.owner
-					is_incorporated = yes
-				}
-			}			
-			
-			scope:second_state = {
-				any_neighbouring_state = {
-					owner = root
-				}
-			}		
-		}	
-		
-		will_propose = {
-			has_game_rule = ai_wargoals_allowed
-			NOT = { root = { infamy >= 24.9 } }
-		}
 	
 		propose_score = {
-			value = 10
-			if = {
-				limit = { root = { infamy >= 24.9 } }
-				add = {
-					value = country_rank
-					multiply = 0
-				}				
-			}
-			if = {
-				limit = { has_game_rule = ai_wargoals_blocked }
-				add = {
-					value = country_rank
-					multiply = 0
-				}				
-			}
+			value = 0
 		}
 	}
 }
@@ -220,69 +165,11 @@ demand_return_claim = {
 		
 	ai = {
 		evaluation_chance = {
-			value = 0.25	
-			if = {
-				limit = { root = { infamy >= 24.9 } }
-				add = {
-					value = country_rank
-					multiply = 0
-				}				
-			}
-			if = {
-				limit = {  has_game_rule = ai_wargoals_blocked }
-				add = {
-					value = country_rank
-					multiply = 0
-				}				
-			}
+			value = 0				
 		}		
-		
-		will_select_as_second_state = {
-			is_incorporated = no		
-		}	
-		
-		will_propose_with_states = {
-			exists = scope:second_state
-			
-			# The AI only uses take state on disconnected colonial bits of subjects which are adjacent to their own lands
-			NOT = {
-				any_neighbouring_state = {
-					owner = root.owner
-					is_incorporated = yes
-				}
-			}			
-			
-			scope:second_state = {
-				any_neighbouring_state = {
-					owner = root
-				}
-			}		
-		}	
-		
-		will_propose = { 
-		OR = {
-			NOT = { root = { infamy >= 24.9 } }
-			NOT = { has_game_rule = ai_wargoals_blocked }
-			NOT = { has_modifier = ai_wargoal_are_blocked }
-		  }
-		}
 	
 		propose_score = {
-			value = 10
-			if = {
-				limit = { root = { infamy >= 24.9 } }
-				add = {
-					value = country_rank
-					multiply = 0
-				}				
-			}
-			if = {
-				limit = { has_game_rule = ai_wargoals_blocked }
-				add = {
-					value = country_rank
-					multiply = 0
-				}				
-			}
+			value = 0
 		}
 	}
 }
@@ -350,69 +237,11 @@ demand_treaty_port = {
 	
 	ai = {
 		evaluation_chance = {
-			value = 0.25		
-			if = {
-				limit = { root = { infamy > 24.9 } }
-				add = {
-					value = country_rank
-					multiply = 0
-				}				
-			}
-			if = {
-				limit = {  has_game_rule = ai_wargoals_blocked }
-				add = {
-					value = country_rank
-					multiply = 0
-				}				
-			}
+			value = 0				
 		}		
 	
-		will_select_as_second_state = {
-			is_incorporated = no		
-		}	
-		
-		will_propose_with_states = {
-			exists = scope:second_state
-			
-			# The AI only uses take state on disconnected colonial bits of subjects which are adjacent to their own lands
-			NOT = {
-				any_neighbouring_state = {
-					owner = root.owner
-					is_incorporated = yes
-				}
-			}			
-			
-			scope:second_state = {
-				any_neighbouring_state = {
-					owner = root
-				}
-			}		
-		}	
-		
-		will_propose = { 
-		OR = {
-			NOT = { root = { infamy >= 24.9 } }
-			NOT = { has_game_rule = ai_wargoals_blocked }
-			NOT = { has_modifier = ai_wargoal_are_blocked }
-		  }
-		}
-	
 		propose_score = {
-			value = 10
-			if = {
-				limit = { root = { infamy >= 24.9 } }
-				add = {
-					value = country_rank
-					multiply = 0
-				}				
-			}
-			if = {
-				limit = { has_game_rule = ai_wargoals_blocked }
-				add = {
-					value = country_rank
-					multiply = 0
-				}				
-			}
+			value = 0
 		}
 	}
 }
@@ -485,42 +314,11 @@ demand_war_reps = {
 	
 	ai = {
 		evaluation_chance = {
-			value = 0.1		
-				if = {
-				limit = {  has_game_rule = ai_wargoals_blocked }
-				add = {
-					value = country_rank
-					multiply = 0
-				}				
-			}
-			if = {
-				limit = { root = { infamy >= 49.9 } }
-				add = {
-					value = country_rank
-					multiply = 0
-				}				
-			}
-		}			
-		will_propose = {
-			has_game_rule = ai_wargoals_allowed
-			NOT = { root = { infamy >= 24.9 } }
-		}
+			value = 0				
+		}		
+	
 		propose_score = {
-			value = 10
-			if = {
-				limit = { root = { infamy >= 24.9 } }
-				add = {
-					value = country_rank
-					multiply = 0
-				}				
-			}
-			if = {
-				limit = { has_game_rule = ai_wargoals_blocked }
-				add = {
-					value = country_rank
-					multiply = 0
-				}				
-			}
+			value = 0
 		}
 	}
 }
@@ -717,45 +515,11 @@ demand_containment = {
 	
 	ai = {
 		evaluation_chance = {
-			value = 0.03
-		if = {
-				limit = {  has_game_rule = ai_wargoals_blocked }
-				add = {
-					value = country_rank
-					multiply = 0
-				}				
-			}
-		if = {
-				limit = { root = { infamy >= 49.9 } }
-				add = {
-					value = country_rank
-					multiply = 0
-				}				
-			}
-		}			
-		will_propose = { 
-		OR = {
-			NOT = { root = { infamy >= 24.9 } }
-			NOT = { has_game_rule = ai_wargoals_blocked }
-			NOT = { has_modifier = ai_wargoal_are_blocked }
-		  }
-		}
+			value = 0				
+		}		
+	
 		propose_score = {
-			value = 10
-			if = {
-				limit = { root = { infamy >= 24.9 } }
-				add = {
-					value = country_rank
-					multiply = 0
-				}				
-			}
-			if = {
-				limit = { has_game_rule = ai_wargoals_blocked }
-				add = {
-					value = country_rank
-					multiply = 0
-				}				
-			}
+			value = 0
 		}
 	}
 }
@@ -884,45 +648,11 @@ demand_humiliation = {
 	
 	ai = {
 		evaluation_chance = {
-			value = 0.03
-				if = {
-				limit = {  has_game_rule = ai_wargoals_blocked }
-				add = {
-					value = country_rank
-					multiply = 0
-				}				
-			}
-		if = {
-				limit = { root = { infamy >= 49.9 } }
-				add = {
-					value = country_rank
-					multiply = 0
-				}				
-			}
-		}			
-		will_propose = { 
-		OR = {
-			NOT = { root = { infamy >= 24.9 } }
-			NOT = { has_game_rule = ai_wargoals_blocked }
-			NOT = { has_modifier = ai_wargoal_are_blocked }
-		  }
-		}
+			value = 0				
+		}		
+	
 		propose_score = {
-			value = 10
-			if = {
-				limit = { root = { infamy >= 24.9 } }
-				add = {
-					value = country_rank
-					multiply = 0
-				}				
-			}
-			if = {
-				limit = { has_game_rule = ai_wargoals_blocked }
-				add = {
-					value = country_rank
-					multiply = 0
-				}				
-			}
+			value = 0
 		}
 	}
 }
@@ -987,45 +717,11 @@ demand_dominion = { #dominion
 	
 	ai = {
 		evaluation_chance = {
-			value = 0.03
-				if = {
-				limit = {  has_game_rule = ai_wargoals_blocked }
-				add = {
-					value = country_rank
-					multiply = 0
-				}				
-			}
-			if = {
-				limit = { root = { infamy >= 49.9 } }
-				add = {
-					value = country_rank
-					multiply = 0
-				}				
-			}
-		}			
-		will_propose = { 
-		OR = {
-			NOT = { root = { infamy >= 24.9 } }
-			NOT = { has_game_rule = ai_wargoals_blocked }
-			NOT = { has_modifier = ai_wargoal_are_blocked }
-		  }
-		}
+			value = 0				
+		}		
+	
 		propose_score = {
-			value = 10
-			if = {
-				limit = { root = { infamy >= 24.9 } }
-				add = {
-					value = country_rank
-					multiply = 0
-				}				
-			}
-			if = {
-				limit = { has_game_rule = ai_wargoals_blocked }
-				add = {
-					value = country_rank
-					multiply = 0
-				}				
-			}
+			value = 0
 		}
 	}
 }
@@ -1089,45 +785,11 @@ demand_protectorate2 = { #protectorate
 	
 	ai = {
 		evaluation_chance = {
-			value = 0.03
-				if = {
-				limit = {  has_game_rule = ai_wargoals_blocked }
-				add = {
-					value = country_rank
-					multiply = 0
-				}				
-			}
-			if = {
-				limit = { root = { infamy >= 49.9 } }
-				add = {
-					value = country_rank
-					multiply = 0
-				}				
-			}
-		}			
-		will_propose = { 
-		OR = {
-			NOT = { root = { infamy >= 24.9 } }
-			NOT = { has_game_rule = ai_wargoals_blocked }
-			NOT = { has_modifier = ai_wargoal_are_blocked }
-		  }
-		}
+			value = 0				
+		}		
+	
 		propose_score = {
-			value = 10
-			if = {
-				limit = { root = { infamy >= 24.9 } }
-				add = {
-					value = country_rank
-					multiply = 0
-				}				
-			}
-			if = {
-				limit = { has_game_rule = ai_wargoals_blocked }
-				add = {
-					value = country_rank
-					multiply = 0
-				}				
-			}
+			value = 0
 		}
 	}
 }
@@ -1192,45 +854,11 @@ demand_transfer_subject = {
 	
 	ai = {
 		evaluation_chance = {
-			value = 0.03
-				if = {
-				limit = {  has_game_rule = ai_wargoals_blocked }
-				add = {
-					value = country_rank
-					multiply = 0
-				}				
-			}
-			if = {
-				limit = { root = { infamy >= 49.9 } }
-				add = {
-					value = country_rank
-					multiply = 0
-				}				
-			}
-		}			
-		will_propose = { 
-		OR = {
-			NOT = { root = { infamy >= 24.9 } }
-			NOT = { has_game_rule = ai_wargoals_blocked }
-			NOT = { has_modifier = ai_wargoal_are_blocked }
-		  }
-		}
+			value = 0				
+		}		
+	
 		propose_score = {
-			value = 10
-			if = {
-				limit = { root = { infamy >= 24.9 } }
-				add = {
-					value = country_rank
-					multiply = 0
-				}				
-			}
-			if = {
-				limit = { has_game_rule = ai_wargoals_blocked }
-				add = {
-					value = country_rank
-					multiply = 0
-				}				
-			}
+			value = 0
 		}
 	}
 }
@@ -1300,46 +928,11 @@ demand_liberate_subject = {
 	
 	ai = {
 		evaluation_chance = {
-			value = 0.03
-				if = {
-				limit = {  has_game_rule = ai_wargoals_blocked }
-				add = {
-					value = country_rank
-					multiply = 0
-				}				
-			}
-			if = {
-				limit = { root = { infamy >= 49.9 } }
-				add = {
-					value = country_rank
-					multiply = 0
-				}				
-			}
-		}			
-		will_propose = { 
-		OR = {
-			NOT = { root = { infamy >= 24.9 } }
-			NOT = { has_game_rule = ai_wargoals_blocked }
-			NOT = { has_modifier = ai_wargoal_are_blocked }
-			NOT = { has_modifier = ai_wargoal_are_blocked }
-		  }
-		}
+			value = 0				
+		}		
+	
 		propose_score = {
-			value = 10
-			if = {
-				limit = { root = { infamy >= 24.9 } }
-				add = {
-					value = country_rank
-					multiply = 0
-				}				
-			}
-			if = {
-				limit = { has_game_rule = ai_wargoals_blocked }
-				add = {
-					value = country_rank
-					multiply = 0
-				}				
-			}
+			value = 0
 		}
 	}
 }
