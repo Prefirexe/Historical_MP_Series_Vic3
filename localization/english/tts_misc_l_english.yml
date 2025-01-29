@@ -250,8 +250,8 @@
  je_carrier_tech_goal: "Research is finished."
 
  je_build_admiralty: "Admiralty"
- je_build_admiralty_reason: "We are setting up a newer, centralized Admiralty to administer our Navy."
- je_build_admiralty_goal: "The setup is complete."
+ je_build_admiralty_reason: "We are setting up a newer, centralized Admiralty to administer our Navy. We will be able to build the Admiralty in the buildings menu, when the Journal entry is done."
+ je_build_admiralty_goal: "The setup is complete." It will cost 500 bureaucracy for awhile. 
 
 #######
 # Decisions
@@ -286,7 +286,7 @@
  carriers_decision: "Develop Fleet Carriers"
  carriers_decision_desc: "Invest on researching better carriers and aircraft to use them."
  build_admiralty_decision: "Build Admiralty"
- build_admiralty_decision_desc: "We'll start the process of setting up a centralized place to administer our navy."
+ build_admiralty_decision_desc: "We'll start the process of setting up a centralized place to administer our navy. This will cost 500 bureaucracy for a while."
  
 
 ######
