@@ -258,19 +258,11 @@ je_acw_reincorporate = {
 				state_region = {
 					is_homeland = cu:dixie
 				}
-				culture_percent_state = {
-					target = cu:dixie
-					value > 0
-				}
 			}
 			state_region = {
 				is_homeland = cu:dixie
 			}
 			is_incorporated = yes	
-			loyalist_fraction = {
-				value >= 0.2
-				culture = cu:dixie
-			}
 		}
 	}
 
