@@ -95,7 +95,7 @@ intervene_in_war = {
 			save_scope_as = target_country_scope
 		}
 		
-			change_infamy = 15
+			change_infamy = 20
 		
 		#THIS joins TARGET's wars
 		custom_tooltip = {
