@@ -60,18 +60,18 @@ german_unification.1 = {
 				}				
 			}
 			
-			if = {
-				limit = {
-					OR = {
-						is_subject = no
-						is_subject_of = ROOT
-					}
-				}			
-				root = { annex_with_incorporation = prev }
-			}
-			else = {
-				trigger_event = { id = german_unification.2 days = 0 popup = yes }
-			}
+				if = {
+					limit = {
+						OR = {
+							is_subject = no
+							is_subject_of = ROOT
+						}
+					}			
+					root = { annex_with_incorporation = prev }
+				}
+				else = {
+					trigger_event = { id = german_unification.2 days = 0 popup = yes }
+				}
 		}
 	}
 
@@ -454,6 +454,29 @@ german_unification.4 = {
 				has_variable = prussian_germany
 			}
 			remove_primary_culture = cu:south_german
+		}
+
+		every_country = {
+			limit = {
+				country_rank < rank_value:major_power
+				OR = {			
+					country_has_primary_culture = cu:north_german
+					country_has_primary_culture = cu:south_german		
+				}	
+				NOT = {
+					THIS = ROOT
+				}				
+			}
+			
+				if = {
+					limit = {
+						OR = {
+							is_subject = no
+							is_subject_of = ROOT
+						}
+					}			
+					root = { annex_with_incorporation = prev }
+				}
 		}
 	}
 
