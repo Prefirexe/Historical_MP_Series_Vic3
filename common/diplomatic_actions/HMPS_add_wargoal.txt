@@ -25,7 +25,6 @@ demand_conquest = {
 	possible = {
 		OR = {
 		ROOT = { limit = { is_ai = yes }
-		has_game_rule = ai_wargoals_allowed
 		NOT = { root = { infamy >= 24.9 } }
 		}
 		ROOT = { is_ai = no }
@@ -112,7 +111,6 @@ demand_return_claim = {
 	possible = {
 	OR = {
 	ROOT = { limit = { is_ai = yes }
-	has_game_rule = ai_wargoals_allowed
 	NOT = { root = { infamy >= 49.9 } }
 	}
 	ROOT = { is_ai = no }
