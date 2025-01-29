@@ -112,7 +112,7 @@ ukraine_free_territory = {
 }
 
 turkish_republic = {
-	color = "turkish_republic_red"
+	color = { 96 3 0 }
 
 	possible = {
 		exists = c:TUR
@@ -163,7 +163,7 @@ dark_khmer = {
 }
 
 austria_hungary = {
-	color = { 124 40 30 }
+	color = { 211 220 240 }
 
 	possible = {
 		exists = c:AUS
