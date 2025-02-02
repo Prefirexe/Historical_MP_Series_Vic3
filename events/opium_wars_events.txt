@@ -98,62 +98,8 @@ opium_wars.1 = {
 		add_journal_entry = {
 			type = je_opium_obsession
 		}
-		# send events to all applicable powers
-			# can't just use the scope because we want to catch multiple countries if we can
-		random_market = {
-			limit = {
-				owner = ROOT
-				any_trade_route = {
-					goods = g:opium
-					importer.owner = ROOT
-					NOT = { actor_market.owner = root }
-					actor_market.owner = {
-						country_rank >= rank_value:major_power
-						NOR = {
-							any_scope_state = {
-								is_treaty_port = yes
-								any_neighbouring_state = {
-									owner = ROOT
-								}
-							}
-							has_diplomatic_pact = {
-								who = root
-								type = foreign_investment_rights
-							}
-						}
-					}
-				}
-			}
-			every_trade_route = {
-				limit = {
-					goods = g:opium
-					importer.owner = ROOT
-					NOT = { actor_market.owner = root }
-					actor_market.owner = {
-						country_rank >= rank_value:major_power
-						NOR = {
-							any_scope_state = {
-								is_treaty_port = yes
-								any_neighbouring_state = {
-									owner = ROOT
-								}
-							}
-							has_diplomatic_pact = {
-								who = root
-								type = foreign_investment_rights
-							}
-						}
-					}
-				}
-				actor_market.owner = {
-					trigger_event = {
-						id = opium_wars.2
-					}
-				}
-			}
-		}
-		ai_chance = {
-			base = 100
+		c:GBR = {
+			trigger_event = { id = opium_wars.2 popup = yes }
 		}
 	}
 }
