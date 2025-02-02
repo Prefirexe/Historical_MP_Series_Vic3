@@ -1,2 +1,16 @@
 ﻿TRADE_ROUTES = {
+	c:GBR ?= {
+		create_trade_route = {
+			goods = opium
+			level = 45
+			direction = import
+			target = c:BIC.market
+		}
+		create_trade_route = {
+			goods = opium
+			level = 30
+			direction = export
+			target = c:CHI.market
+		}
+	}
 }
