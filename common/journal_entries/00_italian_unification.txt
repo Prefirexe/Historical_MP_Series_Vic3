@@ -30,6 +30,7 @@
 		
 	possible = {
 		has_technology_researched = nationalism
+		is_subject = no
 		NOR = {
 			country_tier = hegemony
 			country_tier = empire
