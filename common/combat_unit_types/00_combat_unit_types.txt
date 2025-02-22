@@ -214,7 +214,7 @@ combat_unit_type_trench_infantry = {
     
     battle_modifier = {
         unit_offense_add = 25
-        unit_defense_add = 45
+        unit_defense_add = 40
         unit_morale_loss_add = 8
     }
 
@@ -276,7 +276,7 @@ combat_unit_type_squad_infantry = {
     
     battle_modifier = {
         unit_offense_add = 30
-        unit_defense_add = 50
+        unit_defense_add = 45
         unit_morale_loss_add = 6
     }
 
@@ -339,7 +339,7 @@ combat_unit_type_mechanized_infantry = {
     
     battle_modifier = {
         unit_offense_add = 45
-        unit_defense_add = 55
+        unit_defense_add = 50
         unit_morale_loss_add = 4
         unit_devastation_mult = 0.1
     }

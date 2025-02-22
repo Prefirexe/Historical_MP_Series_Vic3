@@ -158,7 +158,7 @@ handcranked_machine_gun = {
 	category = military
 	
 	modifier = {
-		unit_army_defense_add = 15 #was 5
+		unit_army_defense_add = 10 #was 5
 		unit_kill_rate_add = 0.05
 	}
 	
@@ -305,7 +305,7 @@ concrete_fortifications = {
 		unit_morale_loss_mult = -0.05
 		# build the maginot line and be completely unstoppable, forever, especially if you're France
 		# bonus to general defensiveness or specifically to forts if they become a thing
-		unit_army_defense_mult = 0.2
+		unit_army_defense_mult = 0.15
 	}
 	
 	unlocking_technologies = {	
